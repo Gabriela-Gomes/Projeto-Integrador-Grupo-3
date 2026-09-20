@@ -1,4 +1,4 @@
-# Loja Online de Bolos Dinda Doces e salgados
+# Loja Online - Dinda Doces e salgados
 
 Projeto Integrador 1 parte front-end.
 
