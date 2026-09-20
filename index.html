@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinda | Bolos, Doces e Salgados Artesanais em Brasília</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="barra-topo">
+        <div class="grupo">
+            <span><i class="fas fa-location-dot"></i> Brasília — DF</span>
+            <span><i class="far fa-clock"></i> Seg a Sáb · 8h às 18h</span>
+        </div>
+        <div class="grupo" id="areaUsuario">
+            <a href="#depoimentos" id="usuarioStatus"><i class="fas fa-right-to-bracket"></i> Entrar</a>
+            <a href="#depoimentos" id="usuarioCadastro"><i class="fas fa-heart"></i> Cadastrar</a>
+        </div>
+    </div>
+
+    <!-- HEADER / MENU PRINCIPAL EM DUAS CAMADAS -->
+    <header class="cabecalho-completo">
+        <div class="container-cabecalho">
+            <a href="#inicio" class="logo-elegante-dd" aria-label="Dinda Doces e Salgados">
+                <svg class="icone-dd" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="8" width="48" height="48" rx="16" fill="#1C130D" />
+                    <rect x="8" y="8" width="48" height="48" rx="16" stroke="var(--dourado)" stroke-width="1.5" />
+                    <path
+                        d="M24 18C20 18 18 22 18 26V38C18 42 20 46 24 46H30C34 46 38 42 38 38V26C38 22 34 18 30 18H24Z"
+                        fill="url(#gradHeader)" />
+                    <path
+                        d="M36 18C32 18 30 22 30 26V38C30 42 32 46 36 46H42C46 46 50 42 50 38V26C50 22 46 18 42 18H36Z"
+                        fill="url(#gradHeader)" />
+                    <circle cx="50" cy="14" r="3" fill="#FFF8E7" />
+                    <defs>
+                        <linearGradient id="gradHeader" x1="18" y1="18" x2="50" y2="46">
+                            <stop stop-color="#F4D399" />
+                            <stop offset="1" stop-color="#C88A35" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="texto-dd"><span class="nome-dd">Dinda</span><span class="slogan-dd">Doces &
+                        Salgados</span></span>
+            </a>
+
+            <div class="acoes-cabecalho">
+                <a href="#carrinho" class="acao-header carrinho-header">
+                    <i class="fas fa-bag-shopping"></i><span>Carrinho</span>
+                    <b id="contadorCarrinho">0</b>
+                </a>
+                <div class="seletor-tema">
+                    <button type="button" class="botao-tema" id="btnTema" aria-label="Trocar tema"><i
+                            class="fas fa-palette"></i></button>
+                    <div class="painel-temas" id="painelTemas">
+                        <div class="titulo-temas">Escolha o Tema</div>
+                        <div class="opcoes-tema">
+                            <button class="opcao-tema" data-tema="marrom"><span
+                                    class="amostra-tema amostra-marrom"></span>Marrom</button>
+                            <button class="opcao-tema" data-tema="preto"><span
+                                    class="amostra-tema amostra-preto"></span>Preto Luxo</button>
+                            <button class="opcao-tema" data-tema="rosa"><span
+                                    class="amostra-tema amostra-rosa"></span>Rosa Soft</button>
+                            <button class="opcao-tema" data-tema="rosa-preto"><span
+                                    class="amostra-tema amostra-rosa-preto"></span>Rosa Chic</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="botao-hamburguer" id="btnMenuMobile"
+                    aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+
+        <div class="menu-duas-camadas">
+            <nav class="menu-linha-principal">
+                <a href="#inicio" class="item-menu-novo ativo"><i class="fas fa-house"></i> Início</a>
+                <a href="#cardapio" class="item-menu-novo"><i class="fas fa-cake-candles"></i> Bolos</a>
+                <a href="#cardapio" class="item-menu-novo"><i class="fas fa-utensils"></i> Salgados</a>
+                <a href="#cardapio" class="item-menu-novo"><i class="fas fa-cookie-bite"></i> Doces</a>
+                <a href="#personalizar" class="item-menu-novo"><i class="fas fa-wand-magic-sparkles"></i>
+                    Personalizar</a>
+                <a href="#galeria" class="item-menu-novo"><i class="fas fa-images"></i> Vitrine</a>
+                <a href="#contato" class="item-menu-novo"><i class="fas fa-location-dot"></i> Contato</a>
+            </nav>
+            <nav class="menu-linha-secundaria">
+                <span class="menu-assinatura"><i class="fas fa-crown"></i> Feito artesanalmente, todos os dias</span>
+                <div class="menu-sec-links">
+                    <a href="#contato"><i class="fas fa-truck-fast"></i> Rastrear pedido</a>
+                    <a href="#depoimentos"><i class="fas fa-star"></i> Avaliações</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="menu-mobile-novo" id="menuMobileNovo">
+        <a href="#inicio"><i class="fas fa-house"></i> Início</a>
+        <a href="#cardapio"><i class="fas fa-cake-candles"></i> Bolos</a>
+        <a href="#cardapio"><i class="fas fa-utensils"></i> Salgados</a>
+        <a href="#cardapio"><i class="fas fa-cookie-bite"></i> Doces</a>
+        <a href="#personalizar"><i class="fas fa-wand-magic-sparkles"></i> Personalizar</a>
+        <a href="#carrinho"><i class="fas fa-bag-shopping"></i> Carrinho <span
+                id="contadorCarrinhoMobile">(0)</span></a>
+        <a href="#galeria"><i class="fas fa-images"></i> Vitrine</a>
+        <a href="#depoimentos"><i class="fas fa-star"></i> Avaliações</a>
+        <a href="#contato"><i class="fas fa-truck-fast"></i> Rastrear pedido</a>
+        <a href="#contato"><i class="fas fa-location-dot"></i> Contato</a>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="inicio">
+        <section class="hero">
+            <div>
+                <div class="hero-kicker"><i class="fas fa-sparkles"></i> confeitaria artesanal em brasília</div>
+                <h1>Bolos fresquinhos e delícias para o seu <span>dia a dia.</span></h1>
+                <p class="hero-text">Produção artesanal diária com ingredientes nobres. Saboreie nossos bolos caseiros,
+                    fatias, salgados fresquinhos e doces irresistíveis.</p>
+                <div class="hero-acoes">
+                    <a href="#cardapio" class="btn btn-principal"><i class="fas fa-utensils"></i> Ver cardápio do
+                        dia</a>
+                </div>
+            </div>
+            <div class="hero-art hero-carousel" id="heroCarousel" aria-label="Destaques da Dinda">
+                <div class="hero-slide ativo">
+                    <img src="./img/bolo-2.jpg" alt="Bolo artesanal da Dinda">
+                    <div class="hero-photo-copy">
+                        <span>QUALIDADE ARTESANAL</span>
+                        <strong>O sabor que transforma<br><em>o seu café da tarde.</em></strong>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="./img/bolo-5.jpg" alt="Bolo caseiro artesanal">
+                    <div class="hero-photo-copy">
+                        <span>FEITO COM CARINHO</span>
+                        <strong>Um momento simples<br><em>pode virar memória.</em></strong>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="./img/bolo-3.jpg" alt="Docinhos gourmet">
+                    <div class="hero-photo-copy">
+                        <span>PEQUENOS DETALHES</span>
+                        <strong>Doces que deixam<br><em>o dia mais especial.</em></strong>
+                    </div>
+                </div>
+                <button class="hero-arrow hero-prev" type="button" aria-label="Destaque anterior"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="hero-arrow hero-next" type="button" aria-label="Próximo destaque"><i
+                        class="fas fa-chevron-right"></i></button>
+                <div class="hero-dots" id="heroDots"></div>
+            </div>
+        </section>
+
+        <section class="secao" id="cardapio">
+            <div class="cabecalho-secao">
+                <div class="kicker-secao">cardápio oficial da dinda</div>
+                <h2>Nossas delícias <em>fresquinhas</em></h2>
+                <div class="linha-luxo"></div>
+            </div>
+
+            <div class="abas-container">
+                <button class="btn-aba ativo" data-alvo="aba-bolos"><i class="fas fa-birthday-cake"></i> Bolos <span
+                        class="qtd-cat">(4)</span></button>
+                <button class="btn-aba" data-alvo="aba-salgados"><i class="fas fa-utensils"></i> Salgados <span
+                        class="qtd-cat">(3)</span></button>
+                <button class="btn-aba" data-alvo="aba-doces"><i class="fas fa-cookie-bite"></i> Doces <span
+                        class="qtd-cat">(3)</span></button>
+            </div>
+
+            <div class="painel-categoria ativo" id="aba-bolos">
+                <div class="grade-produtos">
+                    <article class="card-produto" data-id="bolo-1" data-nome="Bolo Supremo de Chocolate"
+                        data-preco="49.90">
+                        <div class="produto-foto"><img src="./img/bolo5.jpg" alt="Bolo Supremo de Chocolate"><span
+                                class="etiqueta">Bolo</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Bolo Supremo de Chocolate</h3>
+                                <p class="produto-desc">Massa fofinha, chocolate e recheio especial.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 49,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-produto" data-id="bolo-2" data-nome="Bolo Caseiro de Baunilha"
+                        data-preco="42.90">
+                        <div class="produto-foto"><img src="./img/bolo-5.jpg" alt="Bolo Caseiro de Baunilha"><span
+                                class="etiqueta">Bolo</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Bolo Caseiro de Baunilha</h3>
+                                <p class="produto-desc">Leve, macio e perfeito para o café da tarde.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 42,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-produto" data-id="bolo-3" data-nome="Bolo Red Velvet" data-preco="59.90">
+                        <div class="produto-foto"><img src="./img/bolo-limao.jpg" alt="Bolo Red Velvet"><span
+                                class="etiqueta">Bolo</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Bolo Red Velvet</h3>
+                                <p class="produto-desc">Camadas delicadas com recheio cremoso.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 59,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-produto" data-id="bolo-4" data-nome="Bolo de Ninho com Morango"
+                        data-preco="64.90">
+                        <div class="produto-foto"><img src="./img/bolo7.jpg" alt="Bolo de Ninho com Morango"><span
+                                class="etiqueta">Bolo</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Bolo de Ninho com Morango</h3>
+                                <p class="produto-desc">Recheio cremoso e morangos frescos.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 64,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="painel-categoria" id="aba-salgados">
+                <div class="grade-produtos">
+                    <article class="card-produto" data-id="salgado-1" data-nome="Coxinha Artesanal" data-preco="8.90">
+                        <div class="produto-foto"><img
+                                src="./img/salgados.jpg"
+                                alt="Coxinha Artesanal"><span class="etiqueta">Salgado</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Coxinha Artesanal</h3>
+                                <p class="produto-desc">Salgado fresquinho, crocante e recheado.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 8,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-produto" data-id="salgado-2" data-nome="Mini Salgados para Festa"
+                        data-preco="39.90">
+                        <div class="produto-foto"><img src="./img/salgados1.jpg" alt="Mini Salgados para Festa"><span
+                                class="etiqueta">Salgado</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Mini Salgados para Festa</h3>
+                                <p class="produto-desc">Seleção variada para comemorações.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 39,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-produto" data-id="salgado-3" data-nome="Empadinha Especial" data-preco="7.90">
+                        <div class="produto-foto"><img
+                                src="./img/coxinha.jpg"
+                                alt="Empadinha Especial"><span class="etiqueta">Salgado</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Empadinha Especial</h3>
+                                <p class="produto-desc">Massa delicada e recheio bem cremoso.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 7,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="painel-categoria" id="aba-doces">
+                <div class="grade-produtos">
+                    <article class="card-produto" data-id="doce-1" data-nome="Brigadeiro Gourmet" data-preco="4.90">
+                        <div class="produto-foto"><img src="./img/brigadeiro.jpg" alt="Brigadeiro Gourmet"><span
+                                class="etiqueta">Doce</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Brigadeiro Gourmet</h3>
+                                <p class="produto-desc">Chocolate intenso e acabamento delicado.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 4,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-produto" data-id="doce-2" data-nome="Torta Cremosa" data-preco="54.90">
+                        <div class="produto-foto"><img
+                                src="./img/docinhos.jpg"
+                                alt="Torta Cremosa"><span class="etiqueta">Doce</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Torta Cremosa</h3>
+                                <p class="produto-desc">Sobremesa cremosa e irresistível.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 54,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-produto" data-id="doce-3" data-nome="Docinhos Gourmet" data-preco="34.90">
+                        <div class="produto-foto"><img src="./img/docinhos1.jpg" alt="Docinhos Gourmet"><span
+                                class="etiqueta">Doce</span></div>
+                        <div class="produto-info">
+                            <div>
+                                <h3 class="produto-nome">Docinhos Gourmet</h3>
+                                <p class="produto-desc">Docinhos para adoçar o seu dia.</p>
+                            </div>
+                            <div class="produto-rodape">
+                                <div class="produto-preco">R$ 34,90</div><button class="btn-pedir btn-adicionar"
+                                    type="button"><i class="fas fa-shopping-bag"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PERSONALIZAÇÃO DE BOLOS -->
+        <section class="secao" id="personalizar">
+            <div class="personalize">
+                <div class="personalize-copy">
+                    <div class="kicker-secao">bolos feitos para você</div>
+                    <h2>Quer um bolo <em>especial</em> para o seu dia?</h2>
+                    <p>Monte seu bolo do seu jeito: escolha a massa, o recheio e os detalhes que combinam com o seu
+                        momento.</p>
+                    <div class="aviso-antecedencia">
+                        <i class="fas fa-calendar-check"></i>
+                        <div><strong>Pedidos personalizados: mínimo de 3 dias de antecedência.</strong><span>Assim
+                                conseguimos preparar cada detalhe com o cuidado que seu bolo merece.</span></div>
+                    </div>
+                    <div class="lista-etapas">
+                        <div class="etapa"><strong>01. Escolha a Massa</strong><span>Baunilha, chocolate ou red
+                                velvet.</span></div>
+                        <div class="etapa"><strong>02. Defina o Recheio</strong><span>Brigadeiro belo, ninho ou doce de
+                                leite.</span></div>
+                        <div class="etapa"><strong>03. Decoração</strong><span>Acabamento delicado e decoração conforme
+                                sua preferência.</span></div>
+                        <div class="etapa"><strong>04. Entrega</strong><span>Retirada ou entrega em Brasília.</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5561999999999?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20personalizado%20com%20pelo%20menos%203%20dias%20de%20antecedencia."
+                        target="_blank" class="btn btn-principal"><i class="fab fa-whatsapp"></i> Encomendar pelo
+                        WhatsApp</a>
+                </div>
+                <div class="personalize-photo">
+                    <img src="./img/bolo-4.jpg" alt="Bolo personalizado da Dinda" height="100%">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FORMAS DE PAGAMENTO -->
+        <section class="secao">
+            <div class="pagamento">
+                <div class="pagamento-texto">
+                    <div class="kicker-secao">facilidade no pagamento</div>
+                    <h3>Pague do seu jeito, com <span>total segurança</span></h3>
+                    <p>Aceitamos diversas formas de pagamento para sua comodidade, seja na entrega ou diretamente pelo
+                        site.</p>
+                    <div class="pagamento-destaque">
+                        <b>PIX</b>
+                        <p>Aprovação imediata e praticidade para garantir o seu pedido na hora.</p>
+                    </div>
+                </div>
+                <div class="pagamento-opcoes">
+                    <div class="opcao-pagamento"><i class="fas fa-qrcode"></i>
+                        <p>PIX</p>
+                    </div>
+                    <div class="opcao-pagamento"><i class="fas fa-credit-card"></i>
+                        <p>Crédito</p>
+                    </div>
+                    <div class="opcao-pagamento"><i class="fas fa-wallet"></i>
+                        <p>Débito</p>
+                    </div>
+                    <div class="opcao-pagamento"><i class="fas fa-money-bill-wave"></i>
+                        <p>Dinheiro</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO VITRINE / CARROSSEL DE FOTOS -->
+        <section class="secao" id="galeria">
+            <div class="cabecalho-secao">
+                <div class="kicker-secao">vitrine de produtos</div>
+                <h2>Nossa vitrine de <em>sabores</em></h2>
+                <div class="linha-luxo"></div>
+            </div>
+            <div class="carrossel-container">
+                <button class="btn-carrossel prev" id="btnPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn-carrossel next" id="btnNext"><i class="fas fa-chevron-right"></i></button>
+                <div class="carrossel-track" id="carrosselTrack">
+                    <div class="item-carrossel">
+                        <img src="./img/bolo4.jpg" alt="Bolo de Chocolate">
+                        <div class="overlay-carrossel"><strong>Bolos Artesanais</strong>
+                            <p>Massa molhadinha com muito recheio.</p>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <img src="./img/bolo-5.jpg" alt="Bolo de chocolate">
+                        <div class="overlay-carrossel"><strong>Bolos Artesanais</strong>
+                            <p>Bolo de cenoura com cobertura de chocolate.</p>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <img src="./img/bolo-1.jpg" alt="bolo de baunilha com chocolate">
+                        <div class="overlay-carrossel"><strong>Bolos Artesanais</strong>
+                            <p>Bolo de baunilha com chocolate.</p>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <img src="./img/bolo1jpg.jpg" alt="Bolos Caseiros">
+                        <div class="overlay-carrossel"><strong>Bolos Artesanais</strong>
+                            <p>Bolo Formigueiro com muitas gotas de chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots-carrossel" id="dotsContainer"></div>
+            </div>
+        </section>
+
+        <section class="secao" id="depoimentos">
+            <div class="cabecalho-secao">
+                <div class="kicker-secao">avaliações de clientes</div>
+                <h2>O que dizem <em>nossos clientes</em></h2>
+                <div class="linha-luxo"></div>
+            </div>
+            <div class="depoimentos-container">
+                <div class="caixa-depoimento-novo">
+                    <h3>Deixe sua avaliação</h3>
+                    <p>Sua avaliação fica salva neste navegador e pode ser publicada na página sem precisar de PHP.</p>
+                    <div class="nota-estrelas" id="notaEstrelas">
+                        <span data-valor="5">★</span><span data-valor="4">★</span><span data-valor="3">★</span><span
+                            data-valor="2">★</span><span data-valor="1">★</span>
+                    </div>
+                    <input type="hidden" id="inputNota" value="5">
+                    <textarea id="campoComentario" placeholder="Escreva seu depoimento..." required></textarea>
+                    <button type="button" class="btn-enviar" id="btnEnviarAvaliacao">Enviar depoimento</button>
+                    <div class="mensagem-aviso" id="mensagemAvaliacao" hidden></div>
+                </div>
+                <div class="grade-depoimentos" id="gradeDepoimentos">
+                    <article class="card-depoimento">
+                        <div>
+                            <div class="estrelas">★★★★★</div>
+                            <p class="depoimento-texto">“Tudo muito caprichado e delicioso. O bolo chegou lindo e muito
+                                saboroso.”</p>
+                        </div>
+                        <p class="depoimento-nome">— Cliente Dinda</p>
+                    </article>
+                    <article class="card-depoimento">
+                        <div>
+                            <div class="estrelas">★★★★★</div>
+                            <p class="depoimento-texto">“Os doces são maravilhosos e o atendimento é muito atencioso.”
+                            </p>
+                        </div>
+                        <p class="depoimento-nome">— Cliente Dinda</p>
+                    </article>
+                    <article class="card-depoimento">
+                        <div>
+                            <div class="estrelas">★★★★★</div>
+                            <p class="depoimento-texto">“Perfeito para um café da tarde especial. Recomendo!”</p>
+                        </div>
+                        <p class="depoimento-nome">— Cliente Dinda</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FAQ (PERGUNTAS FREQUENTES) -->
+        <section class="secao">
+            <div class="cabecalho-secao">
+                <div class="kicker-secao">tira-dúvidas</div>
+                <h2>Perguntas <em>frequentes</em></h2>
+                <div class="linha-luxo"></div>
+            </div>
+            <div class="faq-wrap">
+                <div class="faq-item">
+                    <div class="faq-pergunta">Como faço para pedir um bolo personalizado? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-resposta">Você pode falar conosco pelo WhatsApp ou comprar os produtos disponíveis
+                        diretamente pelo site.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Vocês realizam entregas em Brasília? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">Sim! Realizamos entregas em toda a região de Brasília - DF. Consulte a
+                        taxa de entrega informando o seu endereço no momento do fechamento do pedido.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Quais são as formas de pagamento aceitas? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-resposta">Aceitamos PIX, cartões de crédito e débito, além de dinheiro em espécie na
+                        retirada ou entrega.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Com quanto tempo de antecedência devo pedir um bolo personalizado? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-resposta">Bolos personalizados devem ser solicitados com no mínimo <strong>3 dias de
+                            antecedência</strong>. Esse prazo é necessário para organizar os ingredientes, preparar a
+                        produção e cuidar de todos os detalhes da decoração.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Posso escolher massa, recheio e decoração? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-resposta">Sim! Na personalização você pode montar o bolo de acordo com suas
+                        preferências. A disponibilidade de sabores e detalhes pode variar conforme o pedido.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Posso alterar ou cancelar meu pedido? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">Entre em contato conosco o quanto antes pelo WhatsApp. Alterações dependem
+                        do estágio de produção e da disponibilidade para a nova configuração.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Como funciona a entrega? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-resposta">Realizamos entregas em Brasília — DF. A taxa e a possibilidade de entrega
+                        são confirmadas de acordo com o endereço informado no pedido.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Os produtos são feitos no dia da entrega? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-resposta">Nossa proposta é oferecer produtos artesanais fresquinhos, preparados com
+                        cuidado. O prazo e o processo de produção podem variar conforme o item escolhido.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">Como acompanho meu pedido? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-resposta">Clientes podem acompanhar seus pedidos pela área de pedidos do site e
+                        utilizar a opção de rastreio quando disponível.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO E LOCALIZAÇÃO -->
+        <section class="secao" id="contato">
+            <div class="cabecalho-secao">
+                <div class="kicker-secao">fale conosco</div>
+                <h2>Onde nos <em>encontrar</em></h2>
+                <div class="linha-luxo"></div>
+            </div>
+            <div class="contato-grid">
+                <div class="contato-card">
+                    <h3 style="font:500 24px 'Playfair Display',serif;margin-bottom:12px;">Dinda Doces e Salgados</h3>
+                    <p style="font-size:12px;color:var(--muted);">Venha nos fazer uma visita ou entre em contato pelos
+                        nossos canais oficiais de atendimento.</p>
+                    <div class="contato-item"><i class="fas fa-location-dot"></i><span>Brasília — DF</span></div>
+                    <div class="contato-item"><i class="fas fa-phone"></i><span>(61) 99999-9999</span></div>
+                    <div class="contato-item"><i class="fas fa-envelope"></i><span>contato@dindadoces.com.br</span>
+                    </div>
+                    <div class="contato-item"><i class="far fa-clock"></i><span>Segunda a Sábado, das 8h às 18h</span>
+                    </div>
+                </div>
+                <div class="mapa-box">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.5!2d-47.9292!3d-15.7801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNDYnNDguNCJTIDQ3wrA1NydzNC4zIlc!5e0!3m2!1spt-BR!2sbr!4v1600000000000"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5561999999999" target="_blank" class="whatsapp-flutuante" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="rodape-luxo">
+            <div class="rodape-marca">
+                <a href="#inicio" class="rodape-logo">
+                    <svg class="icone-dd" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="8" width="48" height="48" rx="16" fill="#1C130D" />
+                        <rect x="8" y="8" width="48" height="48" rx="16" stroke="var(--dourado)" stroke-width="1.5" />
+                        <path
+                            d="M24 18C20 18 18 22 18 26V38C18 42 20 46 24 46H30C34 46 38 42 38 38V26C38 22 34 18 30 18H24Z"
+                            fill="url(#gradFooter)" />
+                        <path
+                            d="M36 18C32 18 30 22 30 26V38C30 42 32 46 36 46H42C46 46 50 42 50 38V26C50 22 46 18 42 18H36Z"
+                            fill="url(#gradFooter)" />
+                        <circle cx="50" cy="14" r="3" fill="#FFF8E7" />
+                        <defs>
+                            <linearGradient id="gradFooter" x1="18" y1="18" x2="50" y2="46">
+                                <stop stop-color="#F4D399" />
+                                <stop offset="1" stop-color="#C88A35" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="texto-dd"><span class="nome-dd">Dinda</span><span class="slogan-dd">Doces &
+                            Salgados</span></span>
+                </a>
+                <p class="rodape-frase">Bolos, doces e salgados artesanais preparados com amor para deixar o seu dia
+                    mais gostoso. 💗</p>
+                <div class="rodape-assinatura">feito com carinho em Brasília</div>
+                <div class="rodape-redes">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="rodape-bloco">
+                <h3>Fale conosco<span></span></h3>
+                <p><i class="fab fa-whatsapp"></i><span>(61) 9XXXX-XXXX</span></p>
+                <p><i class="fas fa-envelope"></i><span>contato@dindadoces.com.br</span></p>
+                <p><i class="fas fa-location-dot"></i><span>Brasília — DF</span></p>
+            </div>
+
+            <div class="rodape-bloco">
+                <h3>Explore<span></span></h3>
+                <a href="#inicio"><i class="fas fa-angle-right"></i><span>Início</span></a>
+                <a href="#cardapio"><i class="fas fa-angle-right"></i><span>Cardápio</span></a>
+                <a href="#personalizar"><i class="fas fa-angle-right"></i><span>Personalizar</span></a>
+                <a href="#carrinho"><i class="fas fa-angle-right"></i><span>Meu Carrinho</span></a>
+            </div>
+
+            <div class="rodape-bloco">
+                <h3>Informações<span></span></h3>
+                <a href="#pagamento"><i class="fas fa-credit-card"></i><span>Pagamento</span></a>
+                <a href="#contato"><i class="fas fa-truck"></i><span>Entrega</span></a>
+                <a href="#contato"><i class="fas fa-location-dot"></i><span>Onde Estamos</span></a>
+            </div>
+        </div>
+
+        <div class="rodape-final">
+            <p>© <span id="anoAtual"></span> <strong>Dinda Doces e Salgados</strong>. Todos os direitos reservados.</p>
+            <div class="rodape-selo"><i class="fas fa-cake-candles"></i> Festas inesquecíveis</div>
+        </div>
+    </footer>
+
+
+    <!-- GALERIA AMPLIADA -->
+    <div class="lightbox-galeria" id="lightboxGaleria" aria-hidden="true">
+        <div class="lightbox-caixa" role="dialog" aria-modal="true" aria-label="Galeria de fotos da vitrine">
+            <button type="button" class="lightbox-fechar" id="lightboxFechar" aria-label="Fechar galeria">
+                <i class="fas fa-xmark"></i>
+            </button>
+            <div class="lightbox-contador" id="lightboxContador">1 / 1</div>
+            <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Foto anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img class="lightbox-imagem" id="lightboxImagem" src="" alt="">
+            <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Próxima foto">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-legenda">
+                <strong id="lightboxTitulo"></strong>
+                <span id="lightboxDescricao"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

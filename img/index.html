@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinda | Bolos, Doces e Salgados Artesanais em Brasília</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!--Barra superior-->
+    <div class="barra-topo">
+        <div class="grupo">
+            <span>
+                <i class="fas fa-location-dot"></i>Brasília — DF
+            </span>
+            <span>
+                <i class="far fa-clock"></i>Seg a Sáb · 8h às 18h
+            </span>
+            <div class="grupo" id="areaUsuario">
+                <a href="#depoimentos" id="usuarioStatus"><i class="fas fa-right-to-bracket"></i>Entrar</a>
+                <a href="#depoimentos" id="usuarioCadastro">
+                    <i class="fas fa-heart"></i> Cadastrar</a>
+            </div>
+        </div>
+    </div>
+    <!--Fecha barra superior-->
+    <!--Header menu principal em duas camadas-->
+    <header class="cabecalho-completo">
+        <div class="container-cabecalho">
+            <a href="#inicio" class="logo-elegante-dd aria-label="Dinda Doces e Salgados">
+                <svg class="icone-dd" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="8" width="48" height="48" rx="16" fill="#1C130D"/>
+                <rect x="8" y="8" width="48" height="48" rx="16" stroke="var(--dourado)" stroke-width="1.5"/>
+                <path d="M24 18C20 18 18 22 18 26V38C18 42 20 46 24 46H30C34 46 38 42 38 38V26C38 22 34 18 30 18H24Z" fill="url(#gradHeader)"/>
+                <path d="M36 18C32 18 30 22 30 26V38C30 42 32 46 36 46H42C46 46 50 42 50 38V26C50 22 46 18 42 18H36Z" fill="url(#gradHeader)"/>
+                <circle cx="50" cy="14" r="3" fill="#FFF8E7"/>
+                <defs><linearGradient id="gradHeader" x1="18" y1="18" x2="50" y2="46"><stop stop-color="#F4D399"/><stop offset="1" stop-color="#C88A35"/></linearGradient></defs>
+            </svg>
+            <span class="texto-dd"><span class="nome-dd"></span>Dinda</span><span class="slogan-dd">Doces & Salgados</span></span>
+            </a>
+            <div class="acoes-cabecalho">
+                <a href="#carrinho" class="acao-header carrinho-header">
+                    <i class="fas fa-bag-shopping"><span>Carrinho</span></i>
+                    <b id="contadorCarrinho">0</b>
+                </a>
+                <div class="seletor-tema">
+                    <button type="button" class="botao-tema" id="btnTema" aria-label="Trocar tema"><i class="fas fa-palette"></i>
+                    </button>
+                    <div class="painel-temas" id="painelTemas">
+                        <div class="titulo-temas">Escolha o tema</div>
+                        <div class="opcoes-temas">
+                            <button class="botao-tema" data-tema="marrom"><span class="amostra-tema amostra-marrom"></span>Marrom</button>
+                            <button class="opcao-tema" data-tema="preto">
+                                <span class="amostra-tema amostra-preto">Preto Luxo</span>
+                            </button>
+                            <button class="opcao-tema" data-tema="rosa">
+                                <span class="amostra-tema amostra-rosa">Rosa Soft</span>  
+                            </button>
+                            <button class="opcao-tema" data-tema="rosa-preto">
+                                <span class="amostra-tema amostra-rosa-preto">Rosa Chic</span>   
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="botao-hamburguer" id="btnMenuMobile" aria-label="Abrir menu"><span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="menu-duas-camadas" id="menuPrincipal">
+            <nav class="menu-linha-principal">
+                <a href="#inicio" class="item-menu-novo ativo">
+                    <i class="fas fa-house">Início</i>
+                </a>
+                <a href="#cardapio" class="item-menu-novo">
+                    <i class="fas fa-cake-candles">Bolos</i>
+                </a>
+                <a href="#cardapio" class="item-menu-novo">
+                    <i class="fas fa-utensils">Salgados</i>
+                </a>
+                <a href="#cardapio" class="item-menu-novo">
+                    <i class="fas fa-cookie-bite">Doces</i>
+                </a>
+                <a href="#personalizar" class="item-menu-novo">
+                    <i class="fas fa-wand-magic-sparkles">Sobre</i>Personalizar
+                </a>
+                <a href="#galeria" class="item-menu-novo">
+                    <i class="fas fa-images">Depoimentos</i>Vitrine
+                </a>
+                <a href="#contato" class="item-menu-novo">
+                    <i class="fas fa-location-dot">Contato</i>
+                </a>
+            </nav>
+            <nav class="menu-linha-secundaria">
+                <span class="menu-assinatura"><i class="fas fa-crown""></i>
+                Feito Artesanalmente, todos os dias
+                </span>
+                <div class="menu-sec-links">
+                    <a href="#contato"><i class="fas fa-truck-fast"></i>Rastrear Pedido</a>
+                    </a>
+                    <a href="#depoimentos"><i class="fas fa-star"></i>Avaliações
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Menu mobile-->
+    <div class="menu-mobile-novo" id="menuMobileNovo">
+        <a href="#inicio"><i class="fas fa-house"></i>Início</a>
+        <a href="#cardapio"><i class="fas fa-cake-candles"></i>Bolos</a>
+        <a href="#cardapio"><i class="fas fa-utensils"></i>Salgados</a>
+        <a href="#cardapio"><i class="fas fa-cookie-bite"></i>Doces</a>
+        <a href="#personalizar"><i class="fas fa-wand-magic-sparkles"></i>Personalizar</a>
+        <a href="#carrinho"><i class="fas fa-images"></i>Vitrine</a>
+        <a href="#depoimentos"><i class="fas fa-star"></i>Avaliações</a>
+        <a href="#contato"><i class="fas fa-truck-fast"></i>Rastrear Pedido</a>
+        <a href="#contato"><i class="fas fa-location-dot"></i>Contato</a>
+    </div>
+    <!--Conteúdo da index-->
+    <main id="inicio">
+        <section class="hero">
+            <div class="hero-kicker"><i class="fas fa-sparkles"></i>
+                confeitaria artesanal em Brasília
+                <h1>Bolos fresquinhos e delícias para o seu<span>dia a dia</span></h1>
+                <p class="hero-text">Produção Artesanal diária com ingredientes nobres. Saboreie nossos bolos caseiros, fatias, salgados fresquinhos e doces irresistíveis</p>
+                <div class="hero-acoes">
+                    <a href="#cardapio" class="btn btn-principal">
+                        <i class="fas fas fa-utensils"></i> Ver Cardápio do dia
+                    </a>
+                </div>
+            
+            </div>
+            <div class="hero-art hero-carousel" id="heroCarousel" aria-label="Destaques da Dinda">
+                <div class="hero-slide ativo">
+                    <img src="./img/bolo-2.jpg" al="Bolo artesanal da Dinda">
+                    <div class="hero-photo-copy">
+                        <span>QUALIDADE ARTESANAL</span>
+                        <strong>O sabor que transforma<br><em>o seu café da tarde</em></strong>
+                    </div>    
+                    </div>
+                <div class="hero-slide">
+                    <img src="./img/bolo-5.jpg" alt="Bolo caseiro artesanal">    
+                    <div class="hero-photo-copy">
+                        <span>FEITO COM CARINHO</span>
+                        <strong>Um momento simples<br><em>pode virar memória</em>
+                        </strong>
+
+                    </div>   
+                </div>
+                <div class="hero-slide">
+                    <img src="./img/bolo-3.jpg" alt="Docinhos gourmet">
+                    <div class="hero-photo-copy">
+                        <span>PEQUENOS DETALHES</span>
+                        <strong>Doces que deixam <br><em>o dia mais especial.</em></strong>
+                    </div>
+                </div>
+                <button class="hero-arrow hero-prev" type="button" aria-label="Destaque anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="hero-arrow hero-next" type="button" aria-label="Próximo destaque">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="hero-dots" id="heroDots"></div>
+
+            </div>
+        </section>
+        <section class="secao" id="cardapio">
+            <div class="cabecalho-secao">
+               <div class="kicker-secao">Cardápio oficial da dinda</div>
+                <h2>Nossas delícias<em>fresquinhas</em></h2>
+                <div class="linha-luxo"></div>
+               </div> 
+               <div class="abas-container">
+                    
+               </div>
+            </div>
+        </section>     
+    </main>
+</body>
+</html>
