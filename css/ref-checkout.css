@@ -1,0 +1,547 @@
+body.pagina-referencia-finalizar {
+  background:
+    radial-gradient(
+      ellipse at 100% 8%,
+      color-mix(in srgb, var(--accent) 10%, transparent),
+      transparent 30rem
+    ),
+    var(--page);
+}
+body.pagina-referencia-finalizar .pagina-principal {
+  overflow: clip;
+}
+body.pagina-referencia-finalizar .finalizar-destaque {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 0.55fr);
+  align-items: center;
+  column-gap: clamp(24px, 6vw, 76px);
+  padding-block: clamp(35px, 5vw, 64px) 24px;
+  border-bottom: 1px solid var(--line);
+}
+body.pagina-referencia-finalizar .finalizar-destaque-redacao {
+  min-width: 0;
+}
+body.pagina-referencia-finalizar .finalizar-destaque .sobretitulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+body.pagina-referencia-finalizar .finalizar-destaque .sobretitulo::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+body.pagina-referencia-finalizar .finalizar-destaque h1 {
+  max-width: 680px;
+  margin: 0 0 10px;
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.06;
+}
+body.pagina-referencia-finalizar .finalizar-destaque-redacao > p:last-child {
+  max-width: 600px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+body.pagina-referencia-finalizar .finalizar-destaque-marca {
+  min-height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+body.pagina-referencia-finalizar .finalizar-marca-icone {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--button-text);
+  background: var(--accent);
+  border-radius: 50%;
+  font-size: 22px;
+}
+body.pagina-referencia-finalizar .finalizar-destaque-marca .assinatura {
+  font-size: 28px;
+}
+body.pagina-referencia-finalizar .finalizar-marca-legenda {
+  color: var(--muted);
+  font-size: 11px;
+}
+body.pagina-referencia-finalizar .finalizar-progresso {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 27px auto 0;
+  padding: 15px 19px;
+  width: min(100%, 760px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+body.pagina-referencia-finalizar .progresso-etapa {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+body.pagina-referencia-finalizar .progresso-etapa i {
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--accent-deep);
+  background: var(--surface-soft);
+  font-size: 10px;
+  font-style: normal;
+}
+body.pagina-referencia-finalizar .progresso-etapa.e-atual {
+  color: var(--text);
+}
+body.pagina-referencia-finalizar .progresso-etapa.e-atual i {
+  color: var(--button-text);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+body.pagina-referencia-finalizar .progresso-regra {
+  width: clamp(18px, 5vw, 58px);
+  height: 1px;
+  background: var(--line);
+}
+body.pagina-referencia-finalizar .finalizar-disposicao {
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.72fr);
+  gap: clamp(18px, 3vw, 30px);
+  align-items: start;
+  padding-top: 30px;
+  padding-bottom: 48px;
+}
+body.pagina-referencia-finalizar .finalizar-formulario {
+  min-width: 0;
+  gap: 16px;
+}
+body.pagina-referencia-finalizar .finalizar-grupo.finalizar-painel {
+  min-width: 0;
+  padding: 21px clamp(16px, 2.4vw, 27px) 23px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+  gap: 13px;
+}
+body.pagina-referencia-finalizar .finalizar-grupo legend {
+  max-width: 100%;
+  padding: 0 9px;
+  color: var(--text);
+  font-size: 21px;
+  line-height: 1.35;
+}
+body.pagina-referencia-finalizar .grupo-numero {
+  display: inline-grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  margin-right: 5px;
+  border-radius: 50%;
+  color: var(--button-text);
+  background: var(--accent);
+  font:
+    600 10px/1 "Poppins",
+    sans-serif;
+  vertical-align: 2px;
+}
+body.pagina-referencia-finalizar .painel-introducao {
+  margin: -2px 0 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+body.pagina-referencia-finalizar .finalizar-grupo .formulario-campos {
+  min-width: 0;
+  gap: 7px;
+}
+body.pagina-referencia-finalizar .formulario-campos label {
+  font-size: 12px;
+}
+body.pagina-referencia-finalizar .formulario-campos input,
+body.pagina-referencia-finalizar .formulario-campos select,
+body.pagina-referencia-finalizar .formulario-campos textarea {
+  min-width: 0;
+  min-height: 49px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  background: var(--page);
+  font-size: 13px;
+  transition:
+    border-color 0.16s ease,
+    box-shadow 0.16s ease,
+    background 0.16s ease;
+}
+body.pagina-referencia-finalizar .formulario-campos textarea {
+  min-height: 98px;
+  resize: vertical;
+}
+body.pagina-referencia-finalizar .formulario-campos input:focus,
+body.pagina-referencia-finalizar .formulario-campos select:focus,
+body.pagina-referencia-finalizar .formulario-campos textarea:focus {
+  border-color: var(--focus);
+  outline: 3px solid color-mix(in srgb, var(--focus) 28%, transparent);
+  outline-offset: 1px;
+  background: var(--surface);
+}
+body.pagina-referencia-finalizar .formulario-campos input::placeholder,
+body.pagina-referencia-finalizar .formulario-campos textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.82;
+}
+body.pagina-referencia-finalizar .formulario-grade {
+  gap: 16px;
+}
+body.pagina-referencia-finalizar .emlinha-opcoes {
+  gap: 10px;
+}
+body.pagina-referencia-finalizar .radio-linha {
+  min-height: 48px;
+  flex: 1 1 170px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: var(--page);
+  font-size: 12px;
+}
+body.pagina-referencia-finalizar .radio-linha:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+body.pagina-referencia-finalizar .radio-linha input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-deep);
+}
+body.pagina-referencia-finalizar .campo-ajuda {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+body.pagina-referencia-finalizar .obrigatorio-marca {
+  color: #a12d48;
+}
+:root[data-tema="preto"] body.pagina-referencia-finalizar .obrigatorio-marca,
+:root[data-tema="rosa-preto"] body.pagina-referencia-finalizar .obrigatorio-marca {
+  color: #ffb4be;
+}
+body.pagina-referencia-finalizar .finalizar-notas {
+  margin: 0;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+body.pagina-referencia-finalizar .finalizar-enviar {
+  min-height: 56px;
+  justify-content: space-between;
+  padding-inline: 21px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+body.pagina-referencia-finalizar .finalizar-enviar:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+body.pagina-referencia-finalizar .demo-nota {
+  margin: -3px 0 0;
+  padding: 12px 14px;
+  color: var(--muted);
+  background: var(--surface-soft);
+  border-left: 3px solid var(--accent);
+  font-size: 11px;
+  line-height: 1.65;
+  text-align: left;
+}
+body.pagina-referencia-finalizar .finalizar-erro {
+  margin: 0;
+  color: #8b2938;
+  background: #fff0f2;
+  border-color: #d99aa5;
+  font-size: 13px;
+}
+body.pagina-referencia-finalizar .finalizar-resumo {
+  position: sticky;
+  top: 105px;
+  padding: 0;
+  overflow: hidden;
+  color: #fff5ed;
+  background: var(--header-bg);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+body.pagina-referencia-finalizar .resumo-corpo {
+  padding: clamp(20px, 2.6vw, 29px);
+}
+body.pagina-referencia-finalizar .finalizar-resumo .sobretitulo {
+  color: var(--accent-soft);
+  font-size: 10px;
+}
+body.pagina-referencia-finalizar .finalizar-resumo h2 {
+  margin: 0 0 21px;
+  color: #fff8ec;
+  font-size: clamp(25px, 3vw, 31px);
+  line-height: 1.2;
+}
+body.pagina-referencia-finalizar .finalizar-linhas {
+  min-height: 30px;
+  gap: 11px;
+  padding-bottom: 16px;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+body.pagina-referencia-finalizar .finalizar-linhas li {
+  align-items: start;
+  color: #eadccd;
+  font-size: 12px;
+  line-height: 1.55;
+}
+body.pagina-referencia-finalizar .finalizar-linhas li strong {
+  color: var(--accent-soft);
+  white-space: nowrap;
+}
+body.pagina-referencia-finalizar .finalizar-resumo .resumo-total {
+  margin: 0;
+  padding: 18px 0;
+  color: #eadccd;
+  font-size: 12px;
+}
+body.pagina-referencia-finalizar .finalizar-resumo .resumo-total output {
+  color: var(--accent-soft);
+  font:
+    600 25px/1.2 "Playfair Display",
+    Georgia,
+    serif;
+}
+body.pagina-referencia-finalizar .finalizar-resumo .texto-link {
+  min-height: 42px;
+  color: var(--accent-soft);
+  font-size: 12px;
+}
+body.pagina-referencia-finalizar .resumo-local-nota {
+  display: flex;
+  gap: 9px;
+  margin: 17px 0 0;
+  padding: 12px;
+  color: #eadccd;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  font-size: 11px;
+  line-height: 1.6;
+}
+body.pagina-referencia-finalizar .resumo-local-nota span {
+  color: var(--accent-soft);
+  font-size: 17px;
+  line-height: 1.2;
+}
+body.pagina-referencia-finalizar .local-recibos-painel {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+  margin-top: 0;
+  margin-bottom: 65px;
+  padding: clamp(21px, 3.5vw, 36px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--card-shadow);
+}
+body.pagina-referencia-finalizar .privacidade-icone {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--accent-deep);
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  font-size: 24px;
+}
+body.pagina-referencia-finalizar .privacidade-redacao {
+  min-width: 0;
+}
+body.pagina-referencia-finalizar .privacidade-redacao h2 {
+  margin: 0 0 10px;
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.2;
+}
+body.pagina-referencia-finalizar .privacidade-redacao > p:not(.sobretitulo) {
+  max-width: 900px;
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+body.pagina-referencia-finalizar .privacidade-redacao .botao {
+  min-height: 46px;
+}
+body.pagina-referencia-finalizar #recibos-comentario,
+body.pagina-referencia-finalizar #recibos-erro {
+  margin: 12px 0 0;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  font-size: 12px;
+}
+body.pagina-referencia-finalizar #recibos-erro {
+  color: #8b2938;
+  border-color: #d99aa5;
+  background: #fff0f2;
+}
+body.pagina-referencia-finalizar .pedido-confirmacao {
+  position: relative;
+  gap: 7px;
+  margin: 25px auto 70px;
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+body.pagina-referencia-finalizar .pedido-confirmacao .confirmacao-marca {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  color: var(--button-text);
+  background: var(--accent);
+}
+body.pagina-referencia-finalizar .pedido-confirmacao .sobretitulo {
+  margin-bottom: 0;
+}
+body.pagina-referencia-finalizar .pedido-confirmacao > p:not(.sobretitulo) {
+  line-height: 1.75;
+}
+body.pagina-referencia-finalizar .pedido-confirmacao [role="alert"] {
+  padding: 12px;
+  color: #8b2938;
+  background: #fff0f2;
+  border: 1px solid #d99aa5;
+}
+body.pagina-referencia-finalizar .finalizar-vazio {
+  margin-top: 24px;
+  margin-bottom: 70px;
+  border: 1px solid var(--line);
+  box-shadow: var(--card-shadow);
+}
+body.pagina-referencia-finalizar :is(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  body.pagina-referencia-finalizar .finalizar-disposicao {
+    grid-template-columns: 1fr;
+  }
+  body.pagina-referencia-finalizar .finalizar-resumo {
+    position: static;
+    grid-row: 1;
+  }
+  body.pagina-referencia-finalizar .finalizar-resumo .resumo-corpo {
+    padding: 22px;
+  }
+}
+@media (max-width: 680px) {
+  body.pagina-referencia-finalizar .finalizar-destaque {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 35px;
+  }
+  body.pagina-referencia-finalizar .finalizar-destaque h1 {
+    font-size: clamp(40px, 11vw, 56px);
+  }
+  body.pagina-referencia-finalizar .finalizar-destaque-redacao > p:last-child {
+    font-size: 14px;
+  }
+  body.pagina-referencia-finalizar .finalizar-destaque-marca {
+    min-height: 0;
+    padding: 14px;
+  }
+  body.pagina-referencia-finalizar .finalizar-marca-icone {
+    width: 38px;
+    height: 38px;
+  }
+  body.pagina-referencia-finalizar .finalizar-progresso {
+    justify-content: space-between;
+    gap: 7px;
+    padding: 12px 9px;
+  }
+  body.pagina-referencia-finalizar .progresso-etapa {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 9px;
+    text-align: center;
+  }
+  body.pagina-referencia-finalizar .progresso-etapa i {
+    width: 29px;
+    height: 29px;
+  }
+  body.pagina-referencia-finalizar .progresso-regra {
+    width: auto;
+    flex: 1 1 12px;
+  }
+  body.pagina-referencia-finalizar .finalizar-disposicao {
+    padding-top: 20px;
+  }
+  body.pagina-referencia-finalizar .formulario-grade {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  body.pagina-referencia-finalizar .finalizar-grupo.finalizar-painel {
+    padding: 17px 14px 19px;
+  }
+  body.pagina-referencia-finalizar .finalizar-grupo legend {
+    font-size: 19px;
+  }
+  body.pagina-referencia-finalizar .local-recibos-painel {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 375px) {
+  body.pagina-referencia-finalizar .finalizar-progresso {
+    padding-inline: 6px;
+  }
+  body.pagina-referencia-finalizar .progresso-etapa {
+    max-width: 82px;
+    font-size: 8px;
+  }
+  body.pagina-referencia-finalizar .finalizar-destaque h1 {
+    font-size: 39px;
+  }
+  body.pagina-referencia-finalizar .finalizar-resumo .resumo-corpo {
+    padding: 18px 15px;
+  }
+  body.pagina-referencia-finalizar .finalizar-linhas li {
+    gap: 7px;
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.pagina-referencia-finalizar *,
+  body.pagina-referencia-finalizar *::before,
+  body.pagina-referencia-finalizar *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

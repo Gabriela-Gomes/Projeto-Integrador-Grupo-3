@@ -1,0 +1,28 @@
+.site-rodape .rodape-marca > p {
+  display: block !important;
+  max-width: 32rem;
+  margin: 0 0 14px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (min-width: 681px) and (max-width: 1100px) {
+  .site-rodape .rodape-principal {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: clamp(22px, 3vw, 32px) !important;
+  }
+
+  .site-rodape .rodape-principal > * {
+    min-width: 0;
+  }
+
+  .site-rodape .rodape-marca {
+    grid-column: 1 / -1;
+    max-width: 460px;
+  }
+
+  .site-rodape .rodape-administracao-coluna,
+  .site-rodape .rodape-pagamento-coluna {
+    grid-column: auto;
+  }
+}

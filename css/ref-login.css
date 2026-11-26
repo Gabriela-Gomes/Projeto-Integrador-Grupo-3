@@ -1,0 +1,387 @@
+body.pagina-referencia-acesso .referencia-acesso-principal {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(38px, 6vw, 76px) 0 clamp(56px, 8vw, 96px);
+  background:
+    radial-gradient(
+      ellipse at 7% 18%,
+      color-mix(in srgb, var(--accent) 12%, transparent),
+      transparent 31rem
+    ),
+    radial-gradient(
+      ellipse at 93% 88%,
+      color-mix(in srgb, var(--accent-soft) 18%, transparent),
+      transparent 28rem
+    ),
+    var(--page);
+}
+body.pagina-referencia-acesso .referencia-acesso-estrutura {
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
+  position: relative;
+  z-index: 1;
+}
+body.pagina-referencia-acesso .referencia-acesso-introducao {
+  max-width: 760px;
+  margin: 0 auto clamp(25px, 4vw, 40px);
+  text-align: center;
+}
+body.pagina-referencia-acesso .referencia-acesso-introducao .sobretitulo {
+  margin-bottom: 12px;
+}
+body.pagina-referencia-acesso .referencia-acesso-introducao h1 {
+  margin: 0 0 11px;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.08;
+}
+body.pagina-referencia-acesso .referencia-acesso-introducao > p:last-child {
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 14px;
+}
+body.pagina-referencia-acesso .referencia-acesso-grade {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(360px, 1.06fr);
+  align-items: stretch;
+  gap: 20px;
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine,
+body.pagina-referencia-acesso .referencia-acesso-formulario-painel {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  min-height: 590px;
+  padding: clamp(27px, 4vw, 44px);
+  color: #fff8ed;
+  background:
+    radial-gradient(
+      circle at 84% 12%,
+      color-mix(in srgb, var(--accent-soft) 25%, transparent),
+      transparent 28%
+    ),
+    linear-gradient(145deg, #1b130f 0%, #332219 54%, #171012 100%);
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine::before,
+body.pagina-referencia-acesso .referencia-acesso-vitrine::after {
+  content: "";
+  position: absolute;
+  border: 1px solid color-mix(in srgb, var(--accent-soft) 29%, transparent);
+  border-radius: 50%;
+  pointer-events: none;
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine::before {
+  width: 310px;
+  height: 310px;
+  right: -172px;
+  bottom: -160px;
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine::after {
+  width: 165px;
+  height: 165px;
+  left: -98px;
+  top: -94px;
+  border-color: rgba(255, 255, 255, 0.11);
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine-redacao,
+body.pagina-referencia-acesso .referencia-acesso-vitrine-links {
+  position: relative;
+  z-index: 1;
+}
+body.pagina-referencia-acesso .referencia-acesso-selo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 8px 13px;
+  border: 1px solid color-mix(in srgb, var(--accent-soft) 39%, transparent);
+  border-radius: 999px;
+  color: var(--accent-soft);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine h2 {
+  max-width: 480px;
+  margin: 25px 0 13px;
+  color: #fffaf5;
+  font-size: clamp(34px, 4vw, 49px);
+  line-height: 1.08;
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine h2 em {
+  color: var(--accent-soft);
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine-texto {
+  max-width: 475px;
+  margin: 0;
+  color: #e3d7ce;
+  font-size: 13px;
+  line-height: 1.85;
+}
+body.pagina-referencia-acesso .referencia-acesso-beneficios {
+  display: grid;
+  gap: 10px;
+  margin-top: 26px;
+}
+body.pagina-referencia-acesso .referencia-acesso-beneficio {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.055);
+}
+body.pagina-referencia-acesso .referencia-acesso-beneficio-icone {
+  display: grid;
+  place-items: center;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  color: #21160d;
+  background: var(--accent-soft);
+  font-size: 19px;
+  font-weight: 600;
+}
+body.pagina-referencia-acesso .referencia-acesso-beneficio strong,
+body.pagina-referencia-acesso .referencia-acesso-beneficio span:last-child {
+  display: block;
+}
+body.pagina-referencia-acesso .referencia-acesso-beneficio strong {
+  color: #fffaf5;
+  font-size: 12px;
+}
+body.pagina-referencia-acesso .referencia-acesso-beneficio span:last-child {
+  margin-top: 2px;
+  color: #d2c3b9;
+  font-size: 10px;
+  line-height: 1.5;
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px 22px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine .botao {
+  min-height: 48px;
+}
+body.pagina-referencia-acesso .referencia-acesso-vitrine .texto-link {
+  color: #fff3df;
+}
+body.pagina-referencia-acesso .referencia-acesso-formulario-painel {
+  align-self: stretch;
+  padding: clamp(28px, 4vw, 45px);
+  background: var(--surface);
+}
+body.pagina-referencia-acesso .referencia-acesso-formulario-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 17px;
+}
+body.pagina-referencia-acesso .referencia-acesso-formulario-marca {
+  display: grid;
+  place-items: center;
+  flex: 0 0 54px;
+  width: 54px;
+  height: 54px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  color: var(--button-text);
+  background: var(--accent);
+  font-size: 24px;
+}
+body.pagina-referencia-acesso .referencia-acesso-formulario-titulo .sobretitulo {
+  margin: 0 0 3px;
+  font-size: 9px;
+}
+body.pagina-referencia-acesso .referencia-acesso-formulario-titulo h2 {
+  margin: 0;
+  font-size: clamp(23px, 2.6vw, 29px);
+  line-height: 1.2;
+}
+body.pagina-referencia-acesso .referencia-acesso-formulario-introducao {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+body.pagina-referencia-acesso .auth-formulario {
+  display: grid;
+  gap: 15px;
+}
+body.pagina-referencia-acesso .auth-formulario .formulario-campos {
+  gap: 7px;
+  margin: 0;
+}
+body.pagina-referencia-acesso .auth-formulario .formulario-campos label {
+  font-size: 12px;
+  font-weight: 600;
+}
+body.pagina-referencia-acesso .auth-formulario .formulario-campos input {
+  min-width: 0;
+  min-height: 50px;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--page);
+  font-size: 13px;
+}
+body.pagina-referencia-acesso .auth-formulario .formulario-campos input::placeholder {
+  color: var(--muted);
+  opacity: 0.85;
+}
+body.pagina-referencia-acesso .auth-formulario .formulario-campos input:focus-visible {
+  border-color: var(--focus);
+  outline: 3px solid color-mix(in srgb, var(--focus) 32%, transparent);
+  outline-offset: 1px;
+}
+body.pagina-referencia-acesso .referencia-acesso-senha-linha {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+body.pagina-referencia-acesso .referencia-acesso-senha-linha input {
+  flex: 1 1 auto;
+  width: 0;
+}
+body.pagina-referencia-acesso .referencia-acesso-senha-linha .botao-secundario {
+  flex: 0 0 auto;
+  min-width: 82px;
+  min-height: 50px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--surface-soft);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+body.pagina-referencia-acesso .referencia-acesso-enviar {
+  min-height: 51px;
+  margin-top: 3px;
+}
+body.pagina-referencia-acesso .referencia-acesso-formulario-painel .demo-nota {
+  margin-top: 16px;
+  font-size: 11px;
+}
+body.pagina-referencia-acesso .referencia-acesso-cadastrar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 10px;
+  margin: 20px 0 0;
+  padding-top: 17px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+body.pagina-referencia-acesso .referencia-acesso-cadastrar .texto-link {
+  font-size: 12px;
+}
+body.pagina-referencia-acesso .referencia-acesso-nota {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 13px;
+  margin: 23px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+body.pagina-referencia-acesso .referencia-acesso-nota .assinatura {
+  font-size: 25px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+body.pagina-referencia-acesso :is(a, button, input):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 850px) {
+  body.pagina-referencia-acesso .referencia-acesso-grade {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.pagina-referencia-acesso .referencia-acesso-vitrine {
+    min-height: 0;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-formulario-painel {
+    order: -1;
+  }
+}
+@media (max-width: 520px) {
+  body.pagina-referencia-acesso .referencia-acesso-estrutura {
+    width: min(100% - 32px, 1120px);
+  }
+  body.pagina-referencia-acesso .referencia-acesso-principal {
+    padding-block: 34px 56px;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-introducao {
+    margin-bottom: 23px;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-introducao h1 {
+    font-size: clamp(35px, 10vw, 46px);
+  }
+  body.pagina-referencia-acesso .referencia-acesso-introducao > p:last-child {
+    font-size: 12px;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-vitrine,
+  body.pagina-referencia-acesso .referencia-acesso-formulario-painel {
+    padding: 24px 20px;
+    border-radius: 13px;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-vitrine h2 {
+    font-size: 36px;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-vitrine-links {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-vitrine-links > * {
+    justify-content: center;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-formulario-titulo {
+    align-items: flex-start;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-senha-linha {
+    flex-wrap: wrap;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-senha-linha input {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  body.pagina-referencia-acesso .referencia-acesso-senha-linha .botao-secundario {
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.pagina-referencia-acesso *,
+  body.pagina-referencia-acesso *::before,
+  body.pagina-referencia-acesso *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
