@@ -2,7 +2,10 @@
   "use strict";
 
   const grid = document.getElementById("produto-grade");
-  if (!grid || !window.DindaStore) return;
+  const featuredGrid = document.getElementById("produtos-destaque-grade");
+  if (!grid || !featuredGrid || !window.DindaStore) return;
+  const catalogSection = document.getElementById("cardapio");
+  const featuredIds = new Set(["bolo-1", "bolo-4", "doce-1", "salgado-1"]);
 
   const search = document.getElementById("produto-buscar");
   const clearButton = document.getElementById("limpar-buscar");
@@ -30,7 +33,8 @@
   function renderProducts() {
     if (!modeloProduto) return;
     const produtos = window.DindaStore.readProducts().filter((produto) => produto.ativo);
-    const fragmento = document.createDocumentFragment();
+    const fragmentoDestaques = document.createDocumentFragment();
+    const fragmentoOutros = document.createDocumentFragment();
 
     produtos.forEach((produto) => {
       const cartao = modeloProduto.content.cloneNode(true);
@@ -57,11 +61,20 @@
       const botao = cartao.querySelector("[data-adicionar-produto]");
       botao.dataset.adicionar = produto.id;
       botao.setAttribute("aria-label", `Adicionar ${nome} à sacola`);
-      fragmento.append(cartao);
+      if (featuredIds.has(produto.id)) {
+        artigo.classList.add("produto-cartao-destaque");
+        fragmentoDestaques.append(cartao);
+      } else {
+        fragmentoOutros.append(cartao);
+      }
     });
 
-    grid.replaceChildren(fragmento);
-    cards = Array.from(grid.querySelectorAll("[data-produto-cartao]"));
+    featuredGrid.replaceChildren(fragmentoDestaques);
+    grid.replaceChildren(fragmentoOutros);
+    cards = [
+      ...featuredGrid.querySelectorAll("[data-produto-cartao]"),
+      ...grid.querySelectorAll("[data-produto-cartao]"),
+    ];
     applyFilters();
   }
 
@@ -78,6 +91,12 @@
       card.hidden = !show;
       if (show) visible += 1;
     });
+    const featuredSection = featuredGrid.closest(".vitrine-bloco");
+    const otherSection = grid.closest(".vitrine-bloco");
+    const featuredVisible = Array.from(featuredGrid.querySelectorAll("[data-produto-cartao]")).some((card) => !card.hidden);
+    const othersVisible = Array.from(grid.querySelectorAll("[data-produto-cartao]")).some((card) => !card.hidden);
+    if (featuredSection) featuredSection.hidden = !featuredVisible;
+    if (otherSection) otherSection.hidden = !othersVisible;
     if (noResults) {
       noResults.hidden = visible !== 0;
       noResults.textContent = cards.length
@@ -118,9 +137,9 @@
     button?.click();
   }
 
-  grid.addEventListener("click", (event) => {
+  catalogSection?.addEventListener("click", (event) => {
     const button = event.target.closest("[data-adicionar]");
-    if (!button) return;
+    if (!button || !catalogSection.contains(button)) return;
     const product = window.DindaStore.getProduct(button.dataset.adicionar);
     if (!product) return;
     const saved = window.DindaStore.addItem({ ...product, qtd: 1 });

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html data-tema="marrom" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#0e0e0e" name="theme-color" />
+  <meta content="Gerencie o catálogo de demonstração da Dinda neste navegador." name="description" />
+  <title>Produtos locais — Central da Dinda</title>
+  <link href="img/fivecon.png" rel="icon" type="image/png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/ref-produtos.css" rel="stylesheet" />
+  <link href="css/admin-layout.css" rel="stylesheet" />
+  <link href="css/responsive-tablet.css" rel="stylesheet" />
+  <script>
+    try {
+      const t = localStorage.getItem("dinda-novo-tema");
+      if (["marrom", "preto", "rosa", "rosa-preto"].includes(t))
+        document.documentElement.dataset.tema = t;
+    } catch (e) { }
+  </script>
+  <script defer="" src="js/store.js"></script>
+  <script defer="" src="js/reviews-store.js"></script>
+  <script defer="" src="js/layout.js"></script>
+  <script defer="" src="js/site.js"></script>
+  <script defer="" src="js/admin.js"></script>
+  <script defer="" src="js/products-admin.js"></script>
+</head>
+
+<body class="administracao-pagina pagina-referencia-produtos">
+  <a class="pular-link" href="#principal-conteudo">Pular para o conteúdo</a>
+  <header class="administracao-barraglobal">
+    <div class="administracao-barraglobal-interno">
+      <div class="administracao-barraglobal-contexto">
+        <span aria-hidden="true" class="administracao-barraglobal-ponto"></span><span><strong>Central
+            local</strong><small>Dados neste dispositivo</small></span>
+      </div>
+      <div class="administracao-barraglobal-acoes">
+        <a class="administracao-barraglobal-loja" href="index.html">Ver loja pública <span
+            aria-hidden="true">↗</span></a>
+        <div class="tema-seletor">
+          <button aria-controls="tema-menu" aria-expanded="false" aria-haspopup="true"
+            aria-label="Escolher tema de cores" class="icone-botao tema-gatilho" id="tema-alternar" type="button">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M12 3a9 9 0 1 0 0 18h1.2a2.3 2.3 0 0 0 1.4-4.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4c0-3.8-4-6.8-9-6.8Z">
+              </path>
+              <circle cx="7.5" cy="10" r="1"></circle>
+              <circle cx="11" cy="6.8" r="1"></circle>
+              <circle cx="15.4" cy="7.8" r="1"></circle>
+            </svg>
+          </button>
+          <div aria-label="Temas disponíveis" class="tema-menu" hidden="" id="tema-menu" role="group">
+            <span class="tema-menu-titulo">Escolha seu tema</span>
+            <button aria-pressed="true" class="tema-opcao" data-tema-escolha="marrom" type="button">
+              <span class="tema-amostra amostra-marrom"></span>Marrom
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="preto" type="button">
+              <span class="tema-amostra amostra-preto"></span>Preto Luxo
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa" type="button">
+              <span class="tema-amostra amostra-rosa"></span>Rosa Soft
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa-preto" type="button">
+              <span class="tema-amostra amostra-rosa-chique"></span>Rosa Chic
+            </button>
+          </div>
+        </div>
+        <button aria-controls="administracao-barra-lateral" aria-expanded="false"
+          aria-label="Abrir navegação administrativa" class="hamburguer administracao-menu-alternar"
+          id="administracao-menu-alternar" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div aria-hidden="true" class="administracao-navegacao-sobreposicao" hidden=""
+    id="administracao-navegacao-sobreposicao"></div>
+  <div aria-atomic="true" aria-live="polite" class="site-notificacao" hidden="" id="site-notificacao" role="status">
+  </div>
+  <main aria-labelledby="produtos-pagina-titulo" class="pagina-principal" id="principal-conteudo" tabindex="-1">
+    <section aria-labelledby="produtos-pagina-titulo" class="estrutura pagina-titulo-bloco produtos-introducao">
+      <p class="sobretitulo">Central da Dinda · catálogo local</p>
+      <h1 id="produtos-pagina-titulo">Gestão de <em>produtos.</em></h1>
+      <p>Organize a vitrine demonstrativa neste navegador.</p>
+    </section>
+    <div class="administracao-involucro estrutura">
+      <aside aria-hidden="false" aria-label="Navegação da central demonstrativa" class="administracao-barra-lateral"
+        id="administracao-barra-lateral">
+        <div aria-label="Dinda Doces &amp; Salgados" class="administracao-marca marca">
+          <img alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" />
+        </div>
+        <p class="administracao-barra-lateral-titulo">Área da loja · demo</p>
+        <nav aria-label="Navegação administrativa">
+          <a href="painel.html">Visão geral</a>
+          <a href="pedidos.html">Pedidos locais</a>
+          <a href="avaliacoes.html">Avaliações</a>
+          <a aria-current="page" href="produtos.html">Produtos</a>
+          <a class="administracao-link-vitrine" href="index.html#cardapio">Ver cardápio público</a>
+        </nav>
+      </aside>
+      <div class="administracao-conteudo">
+        <header class="produtos-barrasuperior">
+          <div>
+            <p class="produtos-antetitulo">Catálogo da confeitaria</p>
+            <h2>Seu cardápio começa aqui.</h2>
+            <p>Cadastre e organize os itens que aparecem na vitrine local.</p>
+          </div>
+          <div class="produtos-barrasuperior-acoes">
+            <a class="botao-secundario" href="index.html#cardapio">Ver cardápio</a>
+            <button class="botao-secundario" id="redefinir-produtos" type="button">
+              Restaurar catálogo inicial
+            </button>
+          </div>
+        </header>
+        <section aria-label="Resumo do catálogo" class="catalogo-destaque">
+          <div class="destaque-texto">
+            <span aria-hidden="true" class="destaque-marca">✦</span>
+            <div>
+              <strong>Catálogo demonstrativo</strong>
+              <p>As alterações são armazenadas somente neste navegador.</p>
+            </div>
+          </div>
+          <p aria-live="polite" class="catalogo-contagem" id="produto-contagem">
+            Carregando catálogo…
+          </p>
+        </section>
+        <div class="administracao-aviso" role="note">
+          <span aria-hidden="true">i</span>
+          <div>
+            <strong>Modo de demonstração local, sem autenticação ou
+              backend.</strong>As edições persistem somente neste navegador e não alteram a loja
+            em outros dispositivos. Use apenas conteúdo não sensível.
+          </div>
+        </div>
+        <div class="administracao-produto-disposicao">
+          <section aria-labelledby="produto-formulario-titulo" class="administracao-painel produto-editor">
+            <div class="editor-titulo">
+              <span aria-hidden="true" class="editor-icone">＋</span>
+              <div>
+                <h3 id="produto-formulario-titulo">Novo produto</h3>
+                <p>Preencha os dados da vitrine local.</p>
+              </div>
+            </div>
+            <form class="administracao-formulario" id="produto-formulario">
+              <input id="produto-id" name="id" type="hidden" />
+              <div class="formulario-campos">
+                <label for="produto-nome">Nome do produto</label><input id="produto-nome" maxlength="90" minlength="2"
+                  name="name" required="" />
+              </div>
+              <div class="formulario-campos">
+                <label for="produto-preco">Preço estimado (R$)</label><input id="produto-preco" max="100000" min="0"
+                  name="price" required="" step="0.01" type="number" />
+              </div>
+              <div class="formulario-campos">
+                <label for="produto-categoria">Categoria</label><select id="produto-categoria" name="category"
+                  required="">
+                  <option value="bolos">Bolos</option>
+                  <option value="doces">Doces</option>
+                  <option value="salgados">Salgados</option>
+                </select>
+              </div>
+              <div class="formulario-campos">
+                <label for="produto-descricao">Descrição</label><textarea id="produto-descricao" maxlength="240"
+                  name="description" rows="3"></textarea>
+              </div>
+              <div class="formulario-campos imagem-campo">
+                <label for="produto-imagem">Imagem do produto</label>
+                <div class="imagem-enviar-controle">
+                  <input accept="image/png,image/jpeg,image/webp" aria-describedby="produto-imagem-ajuda"
+                    id="produto-imagem" name="image" type="file" />
+                  <p class="imagem-enviar-ajuda" id="produto-imagem-ajuda">
+                    Escolha uma foto do seu dispositivo.
+                  </p>
+                </div>
+                <img alt="Prévia da imagem do produto" height="420" id="produto-imagem-previsualizacao"
+                  src="img/bolo5.jpg" width="640" />
+              </div>
+              <label class="administracao-caixa" for="produto-ativo"><input checked="" id="produto-ativo" name="active"
+                  type="checkbox" />
+                Exibir no cardápio público local</label>
+              <div class="administracao-acoes">
+                <button class="botao botao-principal" type="submit">
+                  Salvar produto</button><button class="botao-secundario" id="cancelar-produto-editar" type="button">
+                  Limpar formulário
+                </button>
+              </div>
+              <p aria-live="polite" class="formulario-sucesso" hidden="" id="produto-comentario" role="status"></p>
+            </form>
+          </section>
+          <section aria-labelledby="catalogo-local-titulo" class="administracao-painel catalogo-painel">
+            <div class="catalogo-painel-titulo">
+              <div>
+                <p class="produtos-antetitulo">Sua vitrine</p>
+                <h3 id="catalogo-local-titulo">Catálogo deste navegador</h3>
+              </div>
+            </div>
+            <div class="administracao-barra-de-ferramentas">
+              <label class="visualmente-oculto" for="produto-administracao-buscar">Buscar produto</label>
+              <input class="administracao-buscar" id="produto-administracao-buscar"
+                placeholder="Buscar pelo nome ou descrição" type="search" />
+              <div aria-label="Filtrar produtos por categoria" class="administracao-filtros" role="group">
+                <button aria-pressed="true" class="administracao-filtro" data-produto-filtro="todos" type="button">
+                  Todos</button><button aria-pressed="false" class="administracao-filtro" data-produto-filtro="bolos"
+                  type="button">
+                  Bolos</button><button aria-pressed="false" class="administracao-filtro" data-produto-filtro="doces"
+                  type="button">
+                  Doces</button><button aria-pressed="false" class="administracao-filtro" data-produto-filtro="salgados"
+                  type="button">
+                  Salgados
+                </button>
+              </div>
+            </div>
+            <div aria-live="polite" class="administracao-produto-grade" id="administracao-produtos"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <template id="modelo-produto-administrativo">
+    <article class="administracao-produto-cartao">
+      <img data-imagem-produto alt="" width="640" height="420" loading="lazy">
+      <div class="administracao-produto-corpo">
+        <span class="status-pildora" data-situacao-produto></span>
+        <h3 data-nome-produto></h3>
+        <p data-descricao-produto></p>
+        <div class="administracao-produto-rodape"><span data-preco-produto></span>
+          <div class="administracao-produto-acoes">
+            <button class="botao-secundario" type="button" data-editar-produto>Editar</button>
+            <button class="botao-secundario" type="button" data-excluir-produto>Excluir</button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </template>
+  <template id="modelo-catalogo-vazio">
+    <div class="vazio-estado">
+      <h3>Nenhum produto encontrado</h3>
+      <p>Cadastre um item ou limpe os filtros de busca.</p>
+    </div>
+  </template>
+  <canvas id="processador-imagem-produto" hidden></canvas>
+
+
+  <footer class="rodape-administrativo">
+    <p>Central demonstrativa local da Dinda Doces &amp; Salgados · dados mantidos neste navegador.</p>
+  </footer>
+</body>
+
+</html>

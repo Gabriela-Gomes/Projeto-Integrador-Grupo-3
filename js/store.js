@@ -153,9 +153,20 @@
       if (!Array.isArray(parsed))
         return DEFAULT_PRODUCTS.map((item) => ({ ...item }));
       const seen = new Set();
+      const previousDefaultImages = {
+        "bolo-1": "img/bolo5.jpg",
+        "bolo-4": "img/bolo7.jpg",
+        "doce-2": "img/docinhos.jpg",
+      };
+      const defaultsById = new Map(DEFAULT_PRODUCTS.map((item) => [item.id, item]));
       return parsed.map(normalizeProduct).filter((item) => {
         if (!item || seen.has(item.id)) return false;
         seen.add(item.id);
+        const previousImage = previousDefaultImages[item.id];
+        const currentDefault = defaultsById.get(item.id);
+        if (previousImage && currentDefault && item.imagem === previousImage) {
+          item.imagem = currentDefault.imagem;
+        }
         return true;
       });
     } catch {

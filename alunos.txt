@@ -1,0 +1,12 @@
+
+	=== Projeto Integrador grupo 3 ===
+	Alunos envolvidos: Gabriela Gomes, Igor Cruz , Isabelli Tim, Rodrigo Almeida, Stefany, Yslla Gonçalves  
+	
+	=== Figma ===
+
+	https://www.figma.com/design/FX5uv94w88RmiJGdRMNfCF/Prot%C3%B3tipo-Dinda-Doces-%E2%80%94-Loja-e-Pedidos?node-id=0-1&t=uQm7jWYRw4n1J1gC-1	
+
+	=== Github e Gitpages providenciando === 
+
+	https://github.com/Gabriela-Gomes/Projeto-Integrador-Grupo-3
+	https://gabriela-gomes.github.io/Projeto-Integrador-Grupo-3/

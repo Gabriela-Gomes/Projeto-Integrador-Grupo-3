@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html data-tema="marrom" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#0e0e0e" name="theme-color" />
+  <meta content="Pedidos de demonstração armazenados neste navegador." name="description" />
+  <title>Pedidos locais — Central da Dinda</title>
+  <link href="img/fivecon.png" rel="icon" type="image/png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/ref-pedidos.css" rel="stylesheet" />
+  <link href="css/admin-layout.css" rel="stylesheet" />
+  <link href="css/responsive-tablet.css" rel="stylesheet" />
+  <script>
+    try {
+      const t = localStorage.getItem("dinda-novo-tema");
+      if (["marrom", "preto", "rosa", "rosa-preto"].includes(t))
+        document.documentElement.dataset.tema = t;
+    } catch (e) { }
+  </script>
+  <script defer="" src="js/store.js"></script>
+  <script defer="" src="js/reviews-store.js"></script>
+  <script defer="" src="js/layout.js"></script>
+  <script defer="" src="js/site.js"></script>
+  <script defer="" src="js/admin.js"></script>
+  <script defer="" src="js/orders-admin.js"></script>
+</head>
+
+<body class="administracao-pagina pagina-referencia-pedidos">
+  <a class="pular-link" href="#principal-conteudo">Pular para o conteúdo</a>
+  <header class="administracao-barraglobal">
+    <div class="administracao-barraglobal-interno">
+      <div class="administracao-barraglobal-contexto">
+        <span aria-hidden="true" class="administracao-barraglobal-ponto"></span><span><strong>Central
+            local</strong><small>Dados neste dispositivo</small></span>
+      </div>
+      <div class="administracao-barraglobal-acoes">
+        <a class="administracao-barraglobal-loja" href="index.html">Ver loja pública <span
+            aria-hidden="true">↗</span></a>
+        <div class="tema-seletor">
+          <button aria-controls="tema-menu" aria-expanded="false" aria-haspopup="true"
+            aria-label="Escolher tema de cores" class="icone-botao tema-gatilho" id="tema-alternar" type="button">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M12 3a9 9 0 1 0 0 18h1.2a2.3 2.3 0 0 0 1.4-4.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4c0-3.8-4-6.8-9-6.8Z">
+              </path>
+              <circle cx="7.5" cy="10" r="1"></circle>
+              <circle cx="11" cy="6.8" r="1"></circle>
+              <circle cx="15.4" cy="7.8" r="1"></circle>
+            </svg>
+          </button>
+          <div aria-label="Temas disponíveis" class="tema-menu" hidden="" id="tema-menu" role="group">
+            <span class="tema-menu-titulo">Escolha seu tema</span>
+            <button aria-pressed="true" class="tema-opcao" data-tema-escolha="marrom" type="button">
+              <span class="tema-amostra amostra-marrom"></span>Marrom
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="preto" type="button">
+              <span class="tema-amostra amostra-preto"></span>Preto Luxo
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa" type="button">
+              <span class="tema-amostra amostra-rosa"></span>Rosa Soft
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa-preto" type="button">
+              <span class="tema-amostra amostra-rosa-chique"></span>Rosa Chic
+            </button>
+          </div>
+        </div>
+        <button aria-controls="administracao-barra-lateral" aria-expanded="false"
+          aria-label="Abrir navegação administrativa" class="hamburguer administracao-menu-alternar"
+          id="administracao-menu-alternar" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div aria-hidden="true" class="administracao-navegacao-sobreposicao" hidden=""
+    id="administracao-navegacao-sobreposicao"></div>
+  <div aria-atomic="true" aria-live="polite" class="site-notificacao" hidden="" id="site-notificacao" role="status">
+  </div>
+  <main aria-labelledby="pagina-titulo" class="pagina-principal" id="principal-conteudo" tabindex="-1">
+    <div class="administracao-disposicao estrutura">
+      <aside aria-hidden="false" aria-label="Navegação da central demonstrativa" class="administracao-barra-lateral"
+        id="administracao-barra-lateral">
+        <div aria-label="Dinda Doces &amp; Salgados" class="administracao-marca marca">
+          <img alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" />
+        </div>
+        <p class="administracao-barra-lateral-titulo">Área da loja · demo</p>
+        <nav aria-label="Navegação administrativa">
+          <span class="administracao-navegacao-rotulo">Visão geral</span>
+          <a href="painel.html"><span aria-hidden="true" class="administracao-navegacao-marca">◫</span>Visão
+            geral</a>
+          <a aria-current="page" href="pedidos.html"><span aria-hidden="true"
+              class="administracao-navegacao-marca">▤</span>Pedidos
+            locais</a>
+          <a href="avaliacoes.html"><span aria-hidden="true"
+              class="administracao-navegacao-marca">☆</span>Avaliações</a>
+          <a href="produtos.html"><span aria-hidden="true" class="administracao-navegacao-marca">◇</span>Produtos</a>
+          <span class="administracao-navegacao-rotulo">Loja</span>
+          <a class="administracao-link-vitrine" href="index.html"><span aria-hidden="true"
+              class="administracao-navegacao-marca">↗</span>Ver loja
+            pública</a>
+        </nav>
+        <aside class="administracao-barra-lateral-rodape">
+          <span aria-hidden="true" class="barra-lateral-status-ponto"></span><span>Demonstração neste dispositivo</span>
+        </aside>
+      </aside>
+      <div class="administracao-conteudo">
+        <header class="administracao-barrasuperior">
+          <div>
+            <p class="administracao-linhasuperior">
+              Central da Dinda <span aria-hidden="true">/</span> pedidos
+            </p>
+            <span class="administracao-barrasuperior-nota">Área administrativa demonstrativa</span>
+          </div>
+          <a class="administracao-link-loja" href="index.html">Acessar loja <span aria-hidden="true">↗</span></a>
+        </header>
+        <section aria-labelledby="pagina-titulo" class="administracao-destaque">
+          <div class="administracao-destaque-redacao">
+            <p class="administracao-sobretitulo">Central de pedidos</p>
+            <h1 id="pagina-titulo">Pedidos <em>deste navegador.</em></h1>
+            <p>
+              Organize solicitações locais, acompanhe os estados
+              demonstrativos e consulte os itens registrados neste
+              dispositivo.
+            </p>
+          </div>
+          <div aria-hidden="true" class="administracao-destaque-marca">
+            <span>DD</span><i></i>
+          </div>
+        </section>
+        <div class="administracao-aviso" role="note">
+          <span aria-hidden="true">i</span>
+          <div>
+            <strong>Somente registros locais, sem autenticação.</strong>O
+            histórico mostra os comprovantes feitos neste navegador, sem dados
+            pessoais. Os pedidos fictícios da referência antiga não foram
+            importados.
+          </div>
+        </div>
+        <div class="administracao-aviso administracao-armazenamento-aviso" data-administracao-armazenamento-aviso=""
+          hidden="" role="alert"></div>
+        <section aria-labelledby="pedidos-cabecalho" class="pedidos-secao">
+          <div class="administracao-titulo">
+            <div>
+              <p class="administracao-sobretitulo">Acompanhamento</p>
+              <h2 id="pedidos-cabecalho">Gestão de pedidos</h2>
+              <p>
+                Filtre por estado, pesquise referências e atualize o
+                acompanhamento local.
+              </p>
+            </div>
+            <span aria-live="polite" class="status-pildora" id="pedidos-contagem">0 pedidos locais</span>
+          </div>
+          <section aria-label="Filtros de pedidos" class="administracao-painel">
+            <div class="administracao-barra-de-ferramentas">
+              <label class="visualmente-oculto" for="pedidos-buscar">Buscar pedidos locais</label>
+              <input class="administracao-buscar" id="pedidos-buscar" placeholder="Buscar referência ou produto"
+                type="search" />
+              <div aria-label="Filtrar pedidos por status" class="administracao-filtros" role="group">
+                <button aria-pressed="true" class="administracao-filtro" data-pedido-filtro="todos" type="button">
+                  Todos
+                </button>
+                <button aria-pressed="false" class="administracao-filtro" data-pedido-filtro="Recebido" type="button">
+                  Recebidos
+                </button>
+                <button aria-pressed="false" class="administracao-filtro" data-pedido-filtro="Em produção"
+                  type="button">
+                  Em produção
+                </button>
+                <button aria-pressed="false" class="administracao-filtro" data-pedido-filtro="Pronto" type="button">
+                  Prontos
+                </button>
+                <button aria-pressed="false" class="administracao-filtro" data-pedido-filtro="Concluído" type="button">
+                  Concluídos
+                </button>
+                <button aria-pressed="false" class="administracao-filtro" data-pedido-filtro="Cancelado" type="button">
+                  Cancelados
+                </button>
+              </div>
+            </div>
+            <div aria-live="polite" class="administracao-pedido-lista" id="pedidos-lista"></div>
+          </section>
+          <template id="modelo-pedido-vazio">
+            <div class="vazio-estado">
+              <h3>Nenhum pedido encontrado</h3>
+              <p>Faça uma solicitação demonstrativa no checkout deste navegador ou altere os filtros.</p>
+            </div>
+          </template>
+          <template id="modelo-cartao-pedido">
+            <article class="administracao-pedido-cartao" data-pedido-cartao data-situacao="">
+              <div class="administracao-pedido-cabeca">
+                <div>
+                  <h3 data-codigo-pedido></h3><span class="administracao-pedido-meta">Registrado <time
+                      data-data-do-pedido></time></span>
+                </div><span class="status-pildora" data-situacao="" data-situacao-pedido></span>
+              </div>
+              <ul class="administracao-pedido-itens" data-produtos-do-pedido></ul>
+              <div class="administracao-pedido-controles"><label data-situacao-rotulo>Status demonstrativo<select
+                    data-situacao-selecionar=""></select></label><strong class="administracao-pedido-total"
+                  data-pedido-total></strong><button class="botao-secundario" type="button" data-salvar-status="">Salvar
+                  status</button><button class="botao-secundario" type="button" data-excluir-pedido="">Apagar pedido
+                  local</button></div>
+              <p class="demo-nota">Este registro contém somente referência, data, subtotal e itens/opções permitidas.
+                Alterar o status atualiza o histórico e o rastreio neste navegador.</p>
+            </article>
+          </template>
+          <template id="modelo-item-pedido">
+            <li><span data-item-descricao></span><span data-detalhamento-item></span></li>
+          </template>
+          <template id="modelo-detalhe-item"><small data-detalhe-texto></small></template>
+          <template id="modelo-opcao-status">
+            <option value=""></option>
+          </template>
+          <p class="demo-nota">
+            Alterações de status refletem em Meus pedidos e no rastreio apenas
+            neste navegador. O painel não confirma produção, entrega ou
+            pagamento.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape-administrativo">
+    <p>Central demonstrativa local da Dinda Doces &amp; Salgados · dados mantidos neste navegador.</p>
+  </footer>
+</body>
+
+</html>

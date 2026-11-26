@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html data-tema="marrom" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#0e0e0e" name="theme-color" />
+  <meta content="Modere avaliações da demonstração local da Dinda." name="description" />
+  <title>Avaliações | Central local da Dinda</title>
+  <link href="img/fivecon.png" rel="icon" type="image/png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/ref-avaliacoes.css" rel="stylesheet" />
+  <link href="css/admin-layout.css" rel="stylesheet" />
+  <link href="css/responsive-tablet.css" rel="stylesheet" />
+  <script>
+    try {
+      const t = localStorage.getItem("dinda-novo-tema");
+      if (["marrom", "preto", "rosa", "rosa-preto"].includes(t))
+        document.documentElement.dataset.tema = t;
+    } catch (e) { }
+  </script>
+  <script defer="" src="js/store.js"></script>
+  <script defer="" src="js/reviews-store.js"></script>
+  <script defer="" src="js/layout.js"></script>
+  <script defer="" src="js/site.js"></script>
+  <script defer="" src="js/admin.js"></script>
+  <script defer="" src="js/reviews-admin.js"></script>
+</head>
+
+<body class="administracao-pagina pagina-referencia-avaliacoes">
+  <a class="pular-link" href="#principal-conteudo">Pular para o conteúdo</a>
+  <header class="administracao-barraglobal">
+    <div class="administracao-barraglobal-interno">
+      <div class="administracao-barraglobal-contexto">
+        <span aria-hidden="true" class="administracao-barraglobal-ponto"></span><span><strong>Central
+            local</strong><small>Dados neste dispositivo</small></span>
+      </div>
+      <div class="administracao-barraglobal-acoes">
+        <a class="administracao-barraglobal-loja" href="index.html">Ver loja pública <span
+            aria-hidden="true">↗</span></a>
+        <div class="tema-seletor">
+          <button aria-controls="tema-menu" aria-expanded="false" aria-haspopup="true"
+            aria-label="Escolher tema de cores" class="icone-botao tema-gatilho" id="tema-alternar" type="button">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M12 3a9 9 0 1 0 0 18h1.2a2.3 2.3 0 0 0 1.4-4.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4c0-3.8-4-6.8-9-6.8Z">
+              </path>
+              <circle cx="7.5" cy="10" r="1"></circle>
+              <circle cx="11" cy="6.8" r="1"></circle>
+              <circle cx="15.4" cy="7.8" r="1"></circle>
+            </svg>
+          </button>
+          <div aria-label="Temas disponíveis" class="tema-menu" hidden="" id="tema-menu" role="group">
+            <span class="tema-menu-titulo">Escolha seu tema</span>
+            <button aria-pressed="true" class="tema-opcao" data-tema-escolha="marrom" type="button">
+              <span class="tema-amostra amostra-marrom"></span>Marrom
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="preto" type="button">
+              <span class="tema-amostra amostra-preto"></span>Preto Luxo
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa" type="button">
+              <span class="tema-amostra amostra-rosa"></span>Rosa Soft
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa-preto" type="button">
+              <span class="tema-amostra amostra-rosa-chique"></span>Rosa Chic
+            </button>
+          </div>
+        </div>
+        <button aria-controls="administracao-barra-lateral" aria-expanded="false"
+          aria-label="Abrir navegação administrativa" class="hamburguer administracao-menu-alternar"
+          id="administracao-menu-alternar" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div aria-hidden="true" class="administracao-navegacao-sobreposicao" hidden=""
+    id="administracao-navegacao-sobreposicao"></div>
+  <div aria-atomic="true" aria-live="polite" class="site-notificacao" hidden="" id="site-notificacao" role="status">
+  </div>
+  <main aria-labelledby="avaliacoes-pagina-titulo" class="pagina-principal" id="principal-conteudo" tabindex="-1">
+    <section aria-labelledby="avaliacoes-pagina-titulo" class="estrutura pagina-titulo-bloco">
+      <p class="sobretitulo">Central da Dinda · avaliações</p>
+      <h1 id="avaliacoes-pagina-titulo">Palavras que <em>adoçam.</em></h1>
+      <p>
+        Aprove ou remova os comentários enviados pelo formulário público deste
+        navegador.
+      </p>
+    </section>
+    <div class="administracao-involucro estrutura">
+      <aside aria-hidden="false" aria-label="Navegação da central demonstrativa" class="administracao-barra-lateral"
+        id="administracao-barra-lateral">
+        <div aria-label="Dinda Doces &amp; Salgados" class="administracao-marca marca">
+          <img alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" />
+        </div>
+        <p class="administracao-barra-lateral-titulo">Área da loja · demo</p>
+        <nav aria-label="Navegação administrativa">
+          <a href="painel.html">Visão geral</a>
+          <a href="pedidos.html">Pedidos locais</a>
+          <a aria-current="page" href="avaliacoes.html">Avaliações</a>
+          <a href="produtos.html">Produtos</a>
+          <a class="administracao-link-vitrine" href="index.html#depoimentos">Ver avaliações públicas</a>
+        </nav>
+        <p class="administracao-barra-lateral-nota">
+          Painel demonstrativo<br />Dados deste navegador
+        </p>
+      </aside>
+      <div class="administracao-conteudo">
+        <header class="avaliacoes-boasvindas">
+          <div>
+            <p class="avaliacoes-antetitulo">
+              ✦  Dinda · experiência do cliente
+            </p>
+            <h2>Central de <em>avaliações</em></h2>
+            <p>
+              Transforme cada opinião em uma oportunidade de encantar ainda
+              mais.
+            </p>
+          </div>
+          <a class="avaliacoes-loja-link" href="index.html#depoimentos">Ver página pública <span
+              aria-hidden="true">↗</span></a>
+        </header>
+        <div class="administracao-aviso" role="note">
+          <span aria-hidden="true">i</span>
+          <div>
+            <strong>Moderação somente local.</strong>Comentários são guardados
+            neste navegador, sem nome, telefone ou e-mail. Não há envio nem
+            sincronização com a loja.
+          </div>
+        </div>
+        <section aria-label="Resumo de avaliações" class="administracao-estatisticas">
+          <article class="administracao-estatistica">
+            <span>Total local</span><strong id="avaliacao-total">0</strong><small>Avaliações recebidas neste
+              navegador</small>
+          </article>
+          <article class="administracao-estatistica">
+            <span>Aguardando</span><strong id="avaliacao-pendente">0</strong><small>Comentários pendentes de
+              aprovação</small>
+          </article>
+          <article class="administracao-estatistica">
+            <span>Publicadas</span><strong id="avaliacao-aprovado">0</strong><small>Visíveis na página pública
+              local</small>
+          </article>
+        </section>
+        <section aria-labelledby="avaliacoes-moderacao-titulo" class="administracao-painel">
+          <div class="administracao-titulo">
+            <div>
+              <p class="painel-antetitulo">OPINIÕES DOS CLIENTES</p>
+              <h2 id="avaliacoes-moderacao-titulo">Moderação</h2>
+              <p aria-live="polite" id="avaliacao-administracao-contagem">
+                Carregando avaliações…
+              </p>
+            </div>
+          </div>
+          <div class="administracao-barra-de-ferramentas">
+            <label class="visualmente-oculto" for="avaliacao-administracao-buscar">Buscar em avaliações</label>
+            <input class="administracao-buscar" id="avaliacao-administracao-buscar" placeholder="Buscar comentário"
+              type="search" />
+            <div aria-label="Filtrar avaliações" class="administracao-filtros" role="group">
+              <button aria-pressed="true" class="administracao-filtro" data-avaliacao-filtro="todas" type="button">
+                Todas
+              </button>
+              <button aria-pressed="false" class="administracao-filtro" data-avaliacao-filtro="pendente" type="button">
+                Pendentes
+              </button>
+              <button aria-pressed="false" class="administracao-filtro" data-avaliacao-filtro="aprovada" type="button">
+                Publicadas
+              </button>
+            </div>
+          </div>
+          <div aria-live="polite" class="administracao-avaliacao-lista" id="avaliacao-administracao-lista"></div>
+          <template id="avaliacao-cartao-template">
+            <article class="administracao-avaliacao-cartao">
+              <div class="administracao-avaliacao-cabeca">
+                <div>
+                  <h3 data-avaliacao-campo="cliente">Cliente Dinda</h3><span class="administracao-pedido-meta"
+                    data-avaliacao-campo="data"></span>
+                </div>
+                <span class="status-pildora" data-avaliacao-campo="status"></span>
+              </div>
+              <div aria-label="0 de 5 estrelas" class="estrelas" data-avaliacao-campo="estrelas"></div>
+              <blockquote data-avaliacao-campo="texto"></blockquote>
+              <div class="administracao-avaliacao-acoes">
+                <button class="botao-secundario" data-aprovar-avaliacao type="button">Aprovar e publicar</button>
+                <button class="botao-secundario" data-desaprovar-avaliacao hidden type="button">Retirar do site</button>
+                <button class="botao-secundario" data-excluir-avaliacao type="button">Excluir avaliação</button>
+              </div>
+            </article>
+          </template>
+          <template id="avaliacao-vazio-template">
+            <section class="vazio-estado">
+              <h3>Nenhuma avaliação encontrada</h3>
+              <p>Os comentários enviados pela home aparecem aqui como pendentes neste navegador.</p>
+            </section>
+          </template>
+        </section>
+        <p class="demo-nota">
+          A home mostra apenas avaliações aprovadas localmente. Avaliações
+          fixas de demonstração do ZIP antigo não foram importadas.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape-administrativo">
+    <p>Central demonstrativa local da Dinda Doces &amp; Salgados · dados mantidos neste navegador.</p>
+  </footer>
+</body>
+
+</html>

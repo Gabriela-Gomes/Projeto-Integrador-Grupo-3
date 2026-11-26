@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html data-tema="marrom" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#0e0e0e" name="theme-color" />
+  <meta content="Painel demonstrativo local da Dinda Doces &amp; Salgados." name="description" />
+  <title>Central da Dinda — demonstração local</title>
+  <link href="img/fivecon.png" rel="icon" type="image/png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/ref-painel.css" rel="stylesheet" />
+  <link href="css/admin-layout.css" rel="stylesheet" />
+  <link href="css/responsive-tablet.css" rel="stylesheet" />
+  <script>
+    try {
+      const t = localStorage.getItem("dinda-novo-tema");
+      if (["marrom", "preto", "rosa", "rosa-preto"].includes(t))
+        document.documentElement.dataset.tema = t;
+    } catch (e) { }
+  </script>
+  <script defer="" src="js/store.js"></script>
+  <script defer="" src="js/reviews-store.js"></script>
+  <script defer="" src="js/layout.js"></script>
+  <script defer="" src="js/site.js"></script>
+  <script defer="" src="js/admin.js"></script>
+  <script defer="" src="js/blog.js"></script>
+</head>
+
+<body class="administracao-pagina pagina-referencia-painel">
+  <a class="pular-link" href="#principal-conteudo">Pular para o conteúdo</a>
+  <header class="administracao-barraglobal">
+    <div class="administracao-barraglobal-interno">
+      <div class="administracao-barraglobal-contexto">
+        <span aria-hidden="true" class="administracao-barraglobal-ponto"></span><span><strong>Central
+            local</strong><small>Dados neste dispositivo</small></span>
+      </div>
+      <div class="administracao-barraglobal-acoes">
+        <a class="administracao-barraglobal-loja" href="index.html">Ver loja pública <span
+            aria-hidden="true">↗</span></a>
+        <div class="tema-seletor">
+          <button aria-controls="tema-menu" aria-expanded="false" aria-haspopup="true"
+            aria-label="Escolher tema de cores" class="icone-botao tema-gatilho" id="tema-alternar" type="button">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M12 3a9 9 0 1 0 0 18h1.2a2.3 2.3 0 0 0 1.4-4.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4c0-3.8-4-6.8-9-6.8Z">
+              </path>
+              <circle cx="7.5" cy="10" r="1"></circle>
+              <circle cx="11" cy="6.8" r="1"></circle>
+              <circle cx="15.4" cy="7.8" r="1"></circle>
+            </svg>
+          </button>
+          <div aria-label="Temas disponíveis" class="tema-menu" hidden="" id="tema-menu" role="group">
+            <span class="tema-menu-titulo">Escolha seu tema</span>
+            <button aria-pressed="true" class="tema-opcao" data-tema-escolha="marrom" type="button">
+              <span class="tema-amostra amostra-marrom"></span>Marrom
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="preto" type="button">
+              <span class="tema-amostra amostra-preto"></span>Preto Luxo
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa" type="button">
+              <span class="tema-amostra amostra-rosa"></span>Rosa Soft
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa-preto" type="button">
+              <span class="tema-amostra amostra-rosa-chique"></span>Rosa Chic
+            </button>
+          </div>
+        </div>
+        <button aria-controls="administracao-barra-lateral" aria-expanded="false"
+          aria-label="Abrir navegação administrativa" class="hamburguer administracao-menu-alternar"
+          id="administracao-menu-alternar" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div aria-hidden="true" class="administracao-navegacao-sobreposicao" hidden=""
+    id="administracao-navegacao-sobreposicao"></div>
+  <div aria-atomic="true" aria-live="polite" class="site-notificacao" hidden="" id="site-notificacao" role="status">
+  </div>
+  <main aria-labelledby="pagina-titulo" class="pagina-principal" id="principal-conteudo" tabindex="-1">
+    <div class="administracao-disposicao">
+      <aside aria-hidden="false" aria-label="Navegação da central demonstrativa" class="administracao-barra-lateral"
+        id="administracao-barra-lateral">
+        <div aria-label="Dinda Doces &amp; Salgados" class="administracao-marca marca">
+          <img alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" />
+        </div>
+        <p class="administracao-barra-lateral-titulo">Área da loja · demo</p>
+        <nav aria-label="Navegação administrativa">
+          <a aria-current="page" href="painel.html"><span aria-hidden="true" class="navegacao-simbolo">◫</span>Visão
+            geral</a>
+          <a href="pedidos.html"><span aria-hidden="true" class="navegacao-simbolo">▤</span>Pedidos
+            locais</a>
+          <a href="avaliacoes.html"><span aria-hidden="true" class="navegacao-simbolo">☆</span>Avaliações</a>
+          <a href="produtos.html"><span aria-hidden="true" class="navegacao-simbolo">◇</span>Produtos</a>
+          <a href="#blog-gestao"><span aria-hidden="true" class="navegacao-simbolo">✎</span>Blog e
+            recados</a>
+          <a class="administracao-link-vitrine" href="index.html"><span aria-hidden="true"
+              class="navegacao-simbolo">↗</span>Ver loja
+            pública</a>
+        </nav>
+        <aside class="barra-lateral-nota">
+          Central demonstrativa<br />Dados guardados neste navegador
+        </aside>
+      </aside>
+      <div class="administracao-principal-coluna">
+        <div class="administracao-conteudo estrutura">
+          <section aria-labelledby="pagina-titulo" class="administracao-introducao">
+            <div class="administracao-titulo">
+              <div class="administracao-titulo-redacao">
+                <p class="sobretitulo">Central da Dinda · modo local</p>
+                <h1 id="pagina-titulo">Seu painel, <em>em um só lugar.</em></h1>
+                <p>
+                  Resumo das alterações e solicitações demonstrativas
+                  guardadas neste navegador.
+                </p>
+              </div>
+              <div class="administracao-acoes">
+                <button class="botao-secundario" data-atualizar-painel="" type="button">
+                  <span aria-hidden="true">↻</span> Atualizar painel
+                </button>
+                <button class="botao-secundario" data-imprimir-pagina="" type="button">
+                  <span aria-hidden="true">▧</span> Imprimir
+                </button>
+              </div>
+            </div>
+            <div class="administracao-aviso" role="note">
+              <span aria-hidden="true">i</span>
+              <div>
+                <strong>Demonstração local — não é um painel protegido.</strong>
+                Não há autenticação nem banco de dados. Os dados deste painel
+                ficam apenas neste navegador; não use informações reais de
+                clientes nem opere pedidos reais.
+              </div>
+            </div>
+            <div class="administracao-aviso" data-administracao-armazenamento-aviso="" hidden="" role="alert"></div>
+          </section>
+          <section aria-label="Indicadores locais" class="administracao-estatisticas">
+            <article class="administracao-estatistica">
+              <span aria-hidden="true" class="estatistica-icone">▤</span><span class="estatistica-rotulo">Solicitações
+                locais</span><strong id="metrica-pedidos">0</strong><small>Registros do checkout demonstrativo</small>
+            </article>
+            <article class="administracao-estatistica">
+              <span aria-hidden="true" class="estatistica-icone">◷</span><span class="estatistica-rotulo">Em
+                andamento</span><strong id="metrica-abrir">0</strong><small>Sem concluir ou cancelar</small>
+            </article>
+            <article class="administracao-estatistica">
+              <span aria-hidden="true" class="estatistica-icone">♨</span><span class="estatistica-rotulo">Em
+                produção</span><strong id="metrica-producao">0</strong><small>Status local informado no painel</small>
+            </article>
+            <article class="administracao-estatistica">
+              <span aria-hidden="true" class="estatistica-icone">R$</span><span class="estatistica-rotulo">Subtotal
+                somado</span><strong id="metrica-subtotal">R$ 0,00</strong><small>Não representa faturamento</small>
+            </article>
+          </section>
+          <section aria-label="Resumo da atividade" class="administracao-painel-grade">
+            <section aria-labelledby="grafico-titulo" class="administracao-painel grafico-painel">
+              <div class="administracao-painel-titulo">
+                <div>
+                  <p class="secao-antetitulo">Visão da semana</p>
+                  <h2 id="grafico-titulo">Solicitações nos últimos sete dias</h2>
+                  <p>Contagem local; não representa volume de vendas.</p>
+                </div>
+                <span aria-hidden="true" class="painel-emblema">⌁</span>
+              </div>
+              <div aria-label="Solicitações locais nos últimos sete dias" class="administracao-grafico"
+                id="pedidos-grafico" role="img"></div>
+            </section>
+            <section aria-labelledby="atalho-titulo" class="administracao-painel atalhos-painel">
+              <div class="administracao-painel-titulo">
+                <div>
+                  <p class="secao-antetitulo">Acesso rápido</p>
+                  <h2 id="atalho-titulo">Atalhos da central</h2>
+                </div>
+              </div>
+              <div class="administracao-estatisticas atalho-grade">
+                <a class="administracao-estatistica" href="pedidos.html"><span aria-hidden="true"
+                    class="estatistica-icone">▤</span><span>Pedidos locais</span><strong>Ver
+                    status</strong><small>Buscar, filtrar e atualizar</small></a>
+                <a class="administracao-estatistica" href="produtos.html"><span aria-hidden="true"
+                    class="estatistica-icone">◇</span><span>Cardápio local</span><strong
+                    id="metrica-produtos">0</strong><small>Produtos editáveis neste navegador</small></a>
+                <a class="administracao-estatistica" href="avaliacoes.html"><span aria-hidden="true"
+                    class="estatistica-icone">☆</span><span>Avaliações pendentes</span><strong
+                    id="metrica-pendente-avaliacoes">0</strong><small>Comentários aguardando moderação</small></a>
+                <a class="administracao-estatistica" href="avaliacoes.html"><span aria-hidden="true"
+                    class="estatistica-icone">✧</span><span>Avaliações publicadas</span><strong
+                    id="metrica-avaliado">0</strong><small>Visíveis na home local</small></a>
+              </div>
+            </section>
+          </section>
+          <section aria-labelledby="blog-gestao-titulo" class="administracao-painel blog-administracao-painel"
+            id="blog-gestao">
+            <div class="administracao-painel-titulo">
+              <div>
+                <p class="secao-antetitulo">Comunicação com clientes</p>
+                <h2 id="blog-gestao-titulo">Blog e recados da Dinda</h2>
+                <p>
+                  Prepare novidades, avisos e inspirações para a página
+                  inicial.
+                </p>
+              </div>
+              <span class="blog-publicacao-contagem" id="blog-publicacao-contagem">0 publicados · 0 no total</span>
+            </div>
+            <p class="blog-local-nota" role="note">
+              <strong>Demonstração local:</strong> os recados ficam apenas
+              neste navegador. Uma publicação aparece na home deste mesmo
+              dispositivo/origem; não é enviada nem sincronizada com a loja
+              real. Para publicar para todos os clientes será necessário
+              conectar um backend.
+            </p>
+            <form id="blog-publicacao-formulario" novalidate="">
+              <div class="blog-editor-grade">
+                <div class="blog-editor-campos">
+                  <div class="formulario-campos">
+                    <label for="blog-titulo">Título <span class="obrigatorio-marca">*</span></label><input
+                      id="blog-titulo" maxlength="90" name="title" placeholder="Ex.: Novidade fresquinha na vitrine"
+                      required="" type="text" />
+                  </div>
+                  <div class="formulario-campos">
+                    <label for="blog-descricao">Descrição <span class="obrigatorio-marca">*</span></label><textarea
+                      id="blog-descricao" maxlength="700" minlength="12" name="description"
+                      placeholder="Escreva o recado para os clientes (12 a 700 caracteres)." required=""
+                      rows="5"></textarea><small>12 a 700 caracteres; o conteúdo será exibido como texto
+                      simples.</small>
+                  </div>
+                  <div class="formulario-campos">
+                    <label for="blog-galeria-imagem">Escolher uma imagem da galeria</label><select
+                      id="blog-galeria-imagem" name="galleryImage">
+                      <option value="">
+                        Selecione uma foto já incluída…
+                      </option>
+                      <option value="img/bolo-2.jpg">Bolo caseiro</option>
+                      <option value="img/bolo-3.jpg">Bolo artesanal</option>
+                      <option value="img/bolo-4.jpg">Bolo decorado</option>
+                      <option value="img/bolo-limao.jpg">
+                        Bolo de limão
+                      </option>
+                      <option value="img/bolo5.jpg">Bolo de chocolate</option>
+                      <option value="img/bolo7.jpg">Bolo com morangos</option>
+                      <option value="img/brigadeiro.jpg">Brigadeiros</option>
+                      <option value="img/coxinha.jpg">
+                        Salgado artesanal
+                      </option>
+                      <option value="img/docinhos.jpg">Docinhos</option>
+                      <option value="img/docinhos1.jpg">
+                        Docinhos variados
+                      </option>
+                      <option value="img/salgados.jpg">Salgados</option>
+                      <option value="img/salgados1.jpg">Mini salgados</option>
+                    </select>
+                  </div>
+                  <div class="formulario-campos">
+                    <label for="blog-imagem-arquivo">Ou enviar uma imagem própria</label><input
+                      accept="image/jpeg,image/png,image/webp" id="blog-imagem-arquivo" name="imageFile"
+                      type="file" /><small>JPG, PNG ou WebP; no máximo 12 MB. A imagem é reduzida
+                      e guardada localmente.</small>
+                  </div>
+                  <label class="blog-publicar-alternar" for="blog-publicar-agora"><input checked=""
+                      id="blog-publicar-agora" name="publishNow" type="checkbox" /><span><strong>Publicar
+                        imediatamente</strong><br />Se
+                      desmarcado, o recado ficará como rascunho até você
+                      publicar.</span></label>
+                </div>
+                <div class="blog-previsualizacao-painel">
+                  <span>Pré-visualização da imagem</span><img alt="" class="blog-imagem-previsualizacao" hidden=""
+                    id="blog-imagem-previsualizacao" />
+                  <div aria-hidden="true" class="blog-previsualizacao-marcador">
+                    Escolha uma foto da galeria ou envie uma imagem para ver a
+                    prévia.
+                  </div>
+                </div>
+              </div>
+              <div class="blog-formulario-acoes">
+                <button class="botao botao-principal" type="submit">
+                  Salvar recado</button><button class="botao-secundario" hidden="" id="blog-cancelar-editar"
+                  type="button">
+                  Cancelar edição
+                </button>
+              </div>
+              <p aria-live="polite" class="blog-comentario" hidden="" id="blog-comentario" role="status"></p>
+            </form>
+            <div aria-label="Recados salvos neste navegador" class="blog-administracao-lista"
+              id="blog-publicacao-lista"></div>
+          </section>
+          <section aria-labelledby="recente-titulo" class="administracao-painel recente-painel">
+            <div class="administracao-titulo recente-titulo">
+              <div>
+                <p class="secao-antetitulo">Atividade local</p>
+                <h2 id="recente-titulo">Atividade recente</h2>
+                <p>
+                  Pedidos deste navegador, sem nome, telefone ou endereço.
+                </p>
+              </div>
+              <a class="botao-secundario" href="pedidos.html">Gerenciar pedidos <span aria-hidden="true">→</span></a>
+            </div>
+            <div aria-live="polite" id="recente-pedidos"></div>
+          </section>
+          <p class="demo-nota">
+            Para uma operação real são necessários backend, autenticação
+            segura, banco de dados e políticas de acesso. Esta versão não
+            envia, recebe nem sincroniza dados com a loja.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <template id="modelo-coluna-grafico">
+    <div class="administracao-grafico-coluna"><strong data-valor-grafico></strong><span aria-hidden="true"
+        data-barra-grafico></span><small data-dia-grafico></small></div>
+  </template>
+  <template id="modelo-pedido-recente">
+    <article class="administracao-pedido-cartao">
+      <div class="administracao-pedido-cabeca">
+        <div>
+          <h3 data-referencia-pedido></h3><span class="administracao-pedido-meta" data-data-pedido></span>
+        </div><span class="status-pildora" data-situacao-pedido></span>
+      </div>
+      <div class="administracao-pedido-controles"><span class="administracao-pedido-total"
+          data-subtotal-pedido></span><a class="botao-secundario" href="pedidos.html">Gerenciar</a></div>
+    </article>
+  </template>
+  <template id="modelo-lista-pedidos">
+    <div class="administracao-pedido-lista"></div>
+  </template>
+  <template id="modelo-vazio-pedidos">
+    <div class="vazio-estado">
+      <h3>Nenhum pedido local ainda</h3>
+      <p>Uma solicitação demonstrativa feita neste navegador aparece aqui.</p>
+    </div>
+  </template>
+  <template id="modelo-vazio-blog-administracao">
+    <p class="blog-administracao-vazio">Nenhum recado criado ainda. Use o formulário acima para preparar a primeira
+      publicação.</p>
+  </template>
+  <template id="modelo-cartao-blog-administracao">
+    <article class="blog-administracao-cartao"><img class="blog-administracao-miniatura" alt="" loading="lazy"
+        data-imagem-blog-administracao>
+      <div class="blog-administracao-redacao"><span class="blog-publicacao-status"
+          data-situacao-blog-administracao></span>
+        <h3 data-titulo-blog-administracao></h3>
+        <p data-descricao-blog-administracao></p><small data-data-blog-administracao></small>
+      </div>
+      <div class="blog-administracao-acoes"><button type="button" class="botao-secundario"
+          data-blog-acao="edit">Editar</button><button type="button" class="botao-secundario"
+          data-blog-acao="toggle"></button><button type="button" class="botao-secundario blog-excluir-botao"
+          data-blog-acao="delete">Remover</button></div>
+    </article>
+  </template>
+  <template id="modelo-canvas-blog">
+    <div hidden><canvas data-canvas-redimensionamento></canvas></div>
+  </template>
+
+  <footer class="rodape-administrativo">
+    <p>Central demonstrativa local da Dinda Doces &amp; Salgados · dados mantidos neste navegador.</p>
+  </footer>
+</body>
+
+</html>

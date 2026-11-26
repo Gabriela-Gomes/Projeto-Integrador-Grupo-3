@@ -49,7 +49,6 @@
     "Buttercream rosa": "#e6a2b6",
     "Calda de frutas vermelhas": "#963e56",
   };
-  // Escala visual por peso: o bolo cresce de forma proporcional sem sair do prato.
   const cakeScales = {
     "1 kg": [0.82, 0.88],
     "1,5 kg": [0.9, 0.93],

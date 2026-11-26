@@ -151,6 +151,9 @@
         }
       });
       window.addEventListener("resize", ajustarParaTela);
+      // Começa sempre com a navegação recolhida em tablets e celulares.
+      // Evita que uma classe residual deixe o painel escurecido ao carregar.
+      fecharMenu(false);
       ajustarParaTela();
     }
   }
