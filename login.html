@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html data-tema="marrom" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#0e0e0e" name="theme-color" />
+  <meta content="A área de conta da Dinda está em modo demonstrativo." name="description" />
+  <title>Entrar — Dinda Doces &amp; Salgados</title>
+  <link href="img/fivecon.png" rel="icon" type="image/png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/ref-login.css" rel="stylesheet" />
+  <link href="css/responsive-tablet.css" rel="stylesheet" />
+  <script>
+    try {
+      const t = localStorage.getItem("dinda-novo-tema");
+      if (["marrom", "preto", "rosa", "rosa-preto"].includes(t))
+        document.documentElement.dataset.tema = t;
+    } catch (e) { }
+  </script>
+  <script defer="" src="js/store.js"></script>
+  <script defer="" src="js/layout.js"></script>
+  <script defer="" src="js/site.js"></script>
+  <script defer="" src="js/account.js"></script>
+</head>
+
+<body class="pagina-referencia-acesso">
+  <a class="pular-link" href="#principal-conteudo">Pular para o conteúdo</a>
+  <div class="aviso-barra">
+    <div class="estrutura aviso-interno">
+      <span>Feito artesanalmente em Brasília — DF</span><a href="index.html#contato">Segunda a sábado · 8h às 18h</a>
+    </div>
+  </div>
+  <header class="site-cabecalho">
+    <div class="estrutura cabecalho-interno">
+      <a aria-label="Dinda Doces e Salgados — início" class="marca" href="index.html#inicio"><img
+          alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" /></a>
+      <div aria-label="Ações da loja" class="cabecalho-acoes">
+        <a class="cabecalho-conta-botao" href="login.html">Entrar</a>
+        <a class="cabecalho-cadastrar-botao" href="cadastro.html">Cadastrar</a>
+        <div class="tema-seletor">
+          <button aria-controls="tema-menu" aria-expanded="false" aria-haspopup="true"
+            aria-label="Escolher tema de cores" class="icone-botao tema-gatilho" id="tema-alternar" type="button">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M12 3a9 9 0 1 0 0 18h1.2a2.3 2.3 0 0 0 1.4-4.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4c0-3.8-4-6.8-9-6.8Z">
+              </path>
+              <circle cx="7.5" cy="10" r="1"></circle>
+              <circle cx="11" cy="6.8" r="1"></circle>
+              <circle cx="15.4" cy="7.8" r="1"></circle>
+            </svg>
+          </button>
+          <div aria-label="Temas disponíveis" class="tema-menu" hidden="" id="tema-menu" role="group">
+            <span class="tema-menu-titulo">Escolha seu tema</span>
+            <button aria-pressed="true" class="tema-opcao" data-tema-escolha="marrom" type="button">
+              <span class="tema-amostra amostra-marrom"></span>Marrom
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="preto" type="button">
+              <span class="tema-amostra amostra-preto"></span>Preto Luxo
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa" type="button">
+              <span class="tema-amostra amostra-rosa"></span>Rosa Soft
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa-preto" type="button">
+              <span class="tema-amostra amostra-rosa-chique"></span>Rosa Chic
+            </button>
+          </div>
+        </div>
+        <a aria-label="Sacola, 0 itens" class="sacola-link" href="carrinho.html"><svg aria-hidden="true"
+            viewbox="0 0 24 24">
+            <path d="M5 8h14l-1.2 12H6.2L5 8Z"></path>
+            <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+          </svg><span class="sacola-rotulo">Sacola</span><span aria-label="0 itens na sacola" aria-live="polite"
+            class="sacola-contagem" id="sacola-contagem">0</span></a>
+        <button aria-controls="movel-menu" aria-expanded="false" aria-label="Abrir menu" class="hamburguer"
+          id="menu-alternar" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav aria-label="Menu principal" class="movel-menu" hidden="" id="movel-menu">
+        <span class="movel-menu-titulo">Conheça a Dinda</span><a class="navegacao-link" href="index.html#inicio"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"></path>
+          </svg><span>Início</span></a><a class="navegacao-link" href="index.html#cardapio"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M8 5h12M8 12h12M8 19h12"></path>
+            <circle cx="4" cy="5" r="1"></circle>
+            <circle cx="4" cy="12" r="1"></circle>
+            <circle cx="4" cy="19" r="1"></circle>
+          </svg><span>Cardápio</span></a><a class="navegacao-link" href="index.html#galeria"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="16" rx="2" width="18" x="3" y="4"></rect>
+            <circle cx="9" cy="10" r="2"></circle>
+            <path d="m4 18 5-5 3 3 3-4 5 6"></path>
+          </svg><span>Galeria de fotos</span></a><a class="navegacao-link" href="index.html#recados"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2 1.4-4A7.5 7.5 0 1 1 20 11.5Z"></path>
+            <path d="M8 11h8M8 14h5"></path>
+          </svg><span>Novidades e recados</span></a><a class="navegacao-link" href="personalizar.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"></path>
+            <path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"></path>
+          </svg><span>Personalizar seu bolo</span></a><a class="navegacao-link" href="index.html#depoimentos"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"></path>
+          </svg><span>Avaliações e dúvidas</span></a><a class="navegacao-link" href="index.html#contato"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path
+              d="M6.5 3.5h3l1.7 4.2-2 1.6a15 15 0 0 0 5.5 5.5l1.6-2 4.2 1.7v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z">
+            </path>
+          </svg><span>Contato</span></a><a class="navegacao-link" href="index.html#localizacao"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="2.5"></circle>
+          </svg><span>Mapa de Brasília</span></a><span class="movel-menu-titulo">Seu pedido</span><a
+          class="navegacao-link" href="carrinho.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false"
+            viewbox="0 0 24 24">
+            <path d="M5 8h14l-1.2 12H6.2L5 8Z"></path>
+            <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+          </svg><span>Minha sacola</span></a><a class="navegacao-link" href="checkout.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="14" rx="2" width="18" x="3" y="5"></rect>
+            <path d="M3 10h18M7 15h4"></path>
+          </svg><span>Finalizar pedido</span></a><a class="navegacao-link" href="meus-pedidos.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21V3Z"></path>
+            <path d="M10 8h4M10 12h4M10 16h4"></path>
+          </svg><span>Meus pedidos neste navegador</span></a><a class="navegacao-link" href="rastreio.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 4.5 4.5M10.5 7v7M7 10.5h7"></path>
+          </svg><span>Acompanhar por referência</span></a><span class="movel-menu-titulo">Conta e central local</span><a
+          aria-current="page" class="navegacao-link" href="login.html"><svg aria-hidden="true" class="navegacao-icone"
+            focusable="false" viewbox="0 0 24 24">
+            <circle cx="12" cy="8" r="3.2"></circle>
+            <path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path>
+          </svg><span>Entrar</span></a><a class="navegacao-link" href="cadastro.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="9" cy="8" r="3"></circle>
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0M18 8v6M15 11h6"></path>
+          </svg><span>Criar conta</span></a><a class="navegacao-link administracao-entrada-link" href="painel.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+          </svg><span>Painel do admin — demonstração local</span></a>
+      </nav>
+    </div>
+    <div class="cabecalho-navegacao-linha">
+      <nav aria-label="Navegação principal" class="computador-navegacao estrutura">
+        <a class="navegacao-link" href="index.html#inicio"><svg aria-hidden="true" class="navegacao-icone"
+            focusable="false" viewbox="0 0 24 24">
+            <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"></path>
+          </svg><span>Início</span></a><a class="navegacao-link" href="index.html#cardapio"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M8 5h12M8 12h12M8 19h12"></path>
+            <circle cx="4" cy="5" r="1"></circle>
+            <circle cx="4" cy="12" r="1"></circle>
+            <circle cx="4" cy="19" r="1"></circle>
+          </svg><span>Cardápio</span></a><a class="navegacao-link" href="index.html#galeria"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="16" rx="2" width="18" x="3" y="4"></rect>
+            <circle cx="9" cy="10" r="2"></circle>
+            <path d="m4 18 5-5 3 3 3-4 5 6"></path>
+          </svg><span>Galeria</span></a><a class="navegacao-link" href="personalizar.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"></path>
+            <path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"></path>
+          </svg><span>Personalizar</span></a><a class="navegacao-link" href="index.html#recados"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2 1.4-4A7.5 7.5 0 1 1 20 11.5Z"></path>
+            <path d="M8 11h8M8 14h5"></path>
+          </svg><span>Recados</span></a><a class="navegacao-link" href="index.html#depoimentos"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"></path>
+          </svg><span>Avaliações</span></a><a class="navegacao-link" href="rastreio.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 4.5 4.5M10.5 7v7M7 10.5h7"></path>
+          </svg><span>Rastreio</span></a><a class="navegacao-link" href="meus-pedidos.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21V3Z"></path>
+            <path d="M10 8h4M10 12h4M10 16h4"></path>
+          </svg><span>Meus pedidos</span></a><a class="navegacao-link administracao-entrada-link"
+          href="painel.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+          </svg><span>Painel</span></a>
+      </nav>
+    </div>
+    <div class="cabecalho-servico-linha">
+      <div class="estrutura cabecalho-servico-interno">
+        <span class="cabecalho-servico-nota"><span aria-hidden="true" class="servico-marca">✦</span> Feito
+          artesanalmente, todos os dias</span>
+        <div class="cabecalho-servico-links">
+          <a href="rastreio.html">Acompanhar pedido</a><a href="index.html#depoimentos">Avaliações</a><a
+            href="index.html#contato">Atendimento</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div aria-atomic="true" aria-live="polite" class="site-notificacao" hidden="" id="site-notificacao" role="status">
+  </div>
+  <main class="pagina-principal referencia-acesso-principal" id="principal-conteudo" tabindex="-1">
+    <div class="referencia-acesso-estrutura">
+      <header class="referencia-acesso-introducao">
+        <p class="sobretitulo">Sua área Dinda</p>
+        <h1>Entre para <em>continuar.</em></h1>
+        <p>
+          Uma conta real exige um serviço seguro. Nesta versão, não há
+          autenticação ativa.
+        </p>
+      </header>
+      <div class="referencia-acesso-grade">
+        <aside aria-labelledby="referencia-acesso-vitrine-titulo" class="referencia-acesso-vitrine">
+          <div class="referencia-acesso-vitrine-redacao">
+            <p class="referencia-acesso-selo">Acompanhe sem criar conta</p>
+            <h2 id="referencia-acesso-vitrine-titulo">
+              Seu pedido fica <em>à mão.</em>
+            </h2>
+            <p class="referencia-acesso-vitrine-texto">
+              O checkout desta demonstração cria uma referência local.
+              Consulte os registros deste navegador ou acompanhe uma
+              referência sem informar telefone.
+            </p>
+            <div aria-label="Opções disponíveis nesta demonstração" class="referencia-acesso-beneficios">
+              <div class="referencia-acesso-beneficio">
+                <span aria-hidden="true" class="referencia-acesso-beneficio-icone">⌂</span>
+                <div>
+                  <strong>Registros neste navegador</strong><span>Consulte pedidos armazenados localmente.</span>
+                </div>
+              </div>
+              <div class="referencia-acesso-beneficio">
+                <span aria-hidden="true" class="referencia-acesso-beneficio-icone">↗</span>
+                <div>
+                  <strong>Acompanhe por referência</strong><span>Não é necessário informar telefone.</span>
+                </div>
+              </div>
+              <div class="referencia-acesso-beneficio">
+                <span aria-hidden="true" class="referencia-acesso-beneficio-icone">◇</span>
+                <div>
+                  <strong>Sem autenticação ativa</strong><span>Esta página não acessa uma conta real.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="referencia-acesso-vitrine-links">
+            <a class="botao botao-principal" href="meus-pedidos.html">Ver pedidos locais</a>
+            <a class="texto-link" href="rastreio.html">Rastrear por referência <span aria-hidden="true">→</span></a>
+          </div>
+        </aside>
+        <section aria-labelledby="acesso-titulo" class="referencia-acesso-formulario-painel">
+          <div class="referencia-acesso-formulario-titulo">
+            <span aria-hidden="true" class="referencia-acesso-formulario-marca">✦</span>
+            <div>
+              <p class="sobretitulo">Acesso demonstrativo</p>
+              <h2 id="acesso-titulo">Entrar na conta</h2>
+            </div>
+          </div>
+          <p class="referencia-acesso-formulario-introducao">
+            Não use uma senha real nesta demonstração. Os campos são limpos
+            após o envio e nada é enviado ou guardado.
+          </p>
+          <form class="auth-formulario" data-conta-formulario="">
+            <div class="formulario-campos">
+              <label for="acesso-email">E-mail</label>
+              <input autocomplete="off" id="acesso-email" name="email" placeholder="voce@exemplo.com" required=""
+                type="email" />
+            </div>
+            <div class="formulario-campos">
+              <label for="acesso-senha">Senha de demonstração</label>
+              <div class="referencia-acesso-senha-linha">
+                <input autocomplete="off" data-senha-campo="" id="acesso-senha" minlength="4" name="password"
+                  placeholder="Não digite uma senha real" required="" type="password" />
+                <button aria-controls="acesso-senha" aria-pressed="false" class="botao-secundario"
+                  data-alternar-senha="" type="button">
+                  Mostrar
+                </button>
+              </div>
+            </div>
+            <button class="botao botao-principal botao-largo referencia-acesso-enviar" data-conta-enviar=""
+              type="submit">
+              Continuar
+            </button>
+            <p aria-live="polite" class="formulario-sucesso" data-conta-comentario="" hidden="" role="status"></p>
+          </form>
+          <p class="demo-nota">
+            Recuperação de senha e acesso a conta não estão disponíveis sem
+            backend.
+          </p>
+          <p class="referencia-acesso-cadastrar">
+            Primeira visita?
+            <a class="texto-link" href="cadastro.html">Ver cadastro demonstrativo <span aria-hidden="true">→</span></a>
+          </p>
+        </section>
+      </div>
+      <p class="referencia-acesso-nota">
+        Dinda Doces &amp; Salgados
+        <span aria-hidden="true" class="assinatura">feito com carinho</span>
+      </p>
+    </div>
+  </main>
+  <footer class="site-rodape">
+    <section class="estrutura rodape-principal">
+      <div class="rodape-marca">
+        <a aria-label="Dinda Doces e Salgados — início" class="rodape-logo-link" href="index.html#inicio"><img
+            alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" /></a>
+        <p>
+          Cada receita leva um pouquinho de carinho — para transformar
+          encontros em doces lembranças.
+        </p>
+        <span class="assinatura">Dinda · Brasília</span>
+      </div>
+      <div class="rodape-coluna">
+        <h2>A loja</h2>
+        <a href="index.html#cardapio">Cardápio</a><a href="index.html#galeria">Galeria</a><a
+          href="personalizar.html">Monte seu bolo</a><a href="index.html#depoimentos">Avaliações</a><a
+          href="index.html#contato">Contato</a>
+      </div>
+      <div class="rodape-coluna">
+        <h2>Atendimento</h2>
+        <a href="carrinho.html">Minha sacola</a><a href="checkout.html">Finalizar pedido</a><a
+          href="meus-pedidos.html">Meus pedidos</a><a href="rastreio.html">Acompanhar pedido</a><a aria-current="page"
+          href="login.html">Minha conta</a>
+      </div>
+      <div class="rodape-coluna rodape-administracao-coluna">
+        <h2>Central Dinda</h2>
+        <a href="painel.html">Painel administrativo</a><a href="produtos.html">Gerenciar produtos</a><a
+          href="pedidos.html">Gerenciar pedidos</a><a href="avaliacoes.html">Gerenciar avaliações</a><span
+          class="rodape-demo-nota">Demonstração local neste navegador</span>
+      </div>
+      <div class="rodape-coluna rodape-pagamento-coluna">
+        <h2>Formas de pagamento</h2>
+        <div aria-label="Formas de pagamento informadas pela loja" class="pagamento-metodos">
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="m8 3 4 4-4 4-4-4 4-4Zm8 10 4 4-4 4-4-4 4-4ZM3 12l4-4 4 4-4 4-4-4Zm10 0 4-4 4 4-4 4-4-4Z"></path>
+            </svg><span>Pix</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="15" rx="2" width="19" x="2.5" y="4.5"></rect>
+              <path d="M3 9h18M6 15h4"></path>
+            </svg><span>Crédito</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="15" rx="2" width="19" x="2.5" y="4.5"></rect>
+              <path d="M3 9h18M6 15h4M16 15h2"></path>
+            </svg><span>Débito</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="12" rx="2" width="18" x="3" y="6"></rect>
+              <path d="M7 10h10M7 14h5"></path>
+            </svg><span>Dinheiro</span></span>
+        </div>
+        <small class="pagamento-nota">Pagamento combinado no atendimento.</small>
+      </div>
+    </section>
+    <section class="rodape-inferior">
+      <div class="estrutura">
+        <span>© <span data-atual-ano="">2026</span> Dinda Doces &amp;
+          Salgados</span><span>Feito com carinho em Brasília · DF</span>
+      </div>
+    </section>
+  </footer>
+  <button aria-label="Voltar ao topo" class="voltar-para-superior" title="Voltar ao topo" type="button">
+    <svg aria-hidden="true" viewbox="0 0 24 24">
+      <path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path>
+    </svg><span>Topo</span>
+  </button>
+</body>
+
+</html>

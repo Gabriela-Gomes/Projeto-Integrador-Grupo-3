@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html data-tema="marrom" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#0e0e0e" name="theme-color" />
+  <meta content="Acompanhe uma referência local de pedido demonstrativo da Dinda." name="description" />
+  <title>Acompanhar pedido — Dinda Doces &amp; Salgados</title>
+  <link href="img/fivecon.png" rel="icon" type="image/png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/ref-rastreio.css" rel="stylesheet" />
+  <link href="css/responsive-tablet.css" rel="stylesheet" />
+  <script>
+    try {
+      const t = localStorage.getItem("dinda-novo-tema");
+      if (["marrom", "preto", "rosa", "rosa-preto"].includes(t))
+        document.documentElement.dataset.tema = t;
+    } catch (e) { }
+  </script>
+  <script defer="" src="js/store.js"></script>
+  <script defer="" src="js/layout.js"></script>
+  <script defer="" src="js/site.js"></script>
+  <script defer="" src="js/admin.js"></script>
+  <script defer="" src="js/tracking.js"></script>
+</head>
+
+<body class="pagina-referencia-rastreio">
+  <a class="pular-link" href="#principal-conteudo">Pular para o conteúdo</a>
+  <div class="aviso-barra">
+    <div class="estrutura aviso-interno">
+      <span>Feito artesanalmente em Brasília — DF</span><a href="index.html#contato">Segunda a sábado · 8h às 18h</a>
+    </div>
+  </div>
+  <header class="site-cabecalho">
+    <div class="estrutura cabecalho-interno">
+      <a aria-label="Dinda Doces e Salgados — início" class="marca" href="index.html#inicio"><img
+          alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" /></a>
+      <div aria-label="Ações da loja" class="cabecalho-acoes">
+        <a class="cabecalho-conta-botao" href="login.html">Entrar</a>
+        <a class="cabecalho-cadastrar-botao" href="cadastro.html">Cadastrar</a>
+        <div class="tema-seletor">
+          <button aria-controls="tema-menu" aria-expanded="false" aria-haspopup="true"
+            aria-label="Escolher tema de cores" class="icone-botao tema-gatilho" id="tema-alternar" type="button">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M12 3a9 9 0 1 0 0 18h1.2a2.3 2.3 0 0 0 1.4-4.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4c0-3.8-4-6.8-9-6.8Z">
+              </path>
+              <circle cx="7.5" cy="10" r="1"></circle>
+              <circle cx="11" cy="6.8" r="1"></circle>
+              <circle cx="15.4" cy="7.8" r="1"></circle>
+            </svg>
+          </button>
+          <div aria-label="Temas disponíveis" class="tema-menu" hidden="" id="tema-menu" role="group">
+            <span class="tema-menu-titulo">Escolha seu tema</span>
+            <button aria-pressed="true" class="tema-opcao" data-tema-escolha="marrom" type="button">
+              <span class="tema-amostra amostra-marrom"></span>Marrom
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="preto" type="button">
+              <span class="tema-amostra amostra-preto"></span>Preto Luxo
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa" type="button">
+              <span class="tema-amostra amostra-rosa"></span>Rosa Soft
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa-preto" type="button">
+              <span class="tema-amostra amostra-rosa-chique"></span>Rosa Chic
+            </button>
+          </div>
+        </div>
+        <a aria-label="Sacola, 0 itens" class="sacola-link" href="carrinho.html"><svg aria-hidden="true"
+            viewbox="0 0 24 24">
+            <path d="M5 8h14l-1.2 12H6.2L5 8Z"></path>
+            <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+          </svg><span class="sacola-rotulo">Sacola</span><span aria-label="0 itens na sacola" aria-live="polite"
+            class="sacola-contagem" id="sacola-contagem">0</span></a>
+        <button aria-controls="movel-menu" aria-expanded="false" aria-label="Abrir menu" class="hamburguer"
+          id="menu-alternar" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav aria-label="Menu principal" class="movel-menu" hidden="" id="movel-menu">
+        <span class="movel-menu-titulo">Conheça a Dinda</span><a class="navegacao-link" href="index.html#inicio"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"></path>
+          </svg><span>Início</span></a><a class="navegacao-link" href="index.html#cardapio"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M8 5h12M8 12h12M8 19h12"></path>
+            <circle cx="4" cy="5" r="1"></circle>
+            <circle cx="4" cy="12" r="1"></circle>
+            <circle cx="4" cy="19" r="1"></circle>
+          </svg><span>Cardápio</span></a><a class="navegacao-link" href="index.html#galeria"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="16" rx="2" width="18" x="3" y="4"></rect>
+            <circle cx="9" cy="10" r="2"></circle>
+            <path d="m4 18 5-5 3 3 3-4 5 6"></path>
+          </svg><span>Galeria de fotos</span></a><a class="navegacao-link" href="index.html#recados"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2 1.4-4A7.5 7.5 0 1 1 20 11.5Z"></path>
+            <path d="M8 11h8M8 14h5"></path>
+          </svg><span>Novidades e recados</span></a><a class="navegacao-link" href="personalizar.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"></path>
+            <path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"></path>
+          </svg><span>Personalizar seu bolo</span></a><a class="navegacao-link" href="index.html#depoimentos"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"></path>
+          </svg><span>Avaliações e dúvidas</span></a><a class="navegacao-link" href="index.html#contato"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path
+              d="M6.5 3.5h3l1.7 4.2-2 1.6a15 15 0 0 0 5.5 5.5l1.6-2 4.2 1.7v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z">
+            </path>
+          </svg><span>Contato</span></a><a class="navegacao-link" href="index.html#localizacao"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="2.5"></circle>
+          </svg><span>Mapa de Brasília</span></a><span class="movel-menu-titulo">Seu pedido</span><a
+          class="navegacao-link" href="carrinho.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false"
+            viewbox="0 0 24 24">
+            <path d="M5 8h14l-1.2 12H6.2L5 8Z"></path>
+            <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+          </svg><span>Minha sacola</span></a><a class="navegacao-link" href="checkout.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="14" rx="2" width="18" x="3" y="5"></rect>
+            <path d="M3 10h18M7 15h4"></path>
+          </svg><span>Finalizar pedido</span></a><a class="navegacao-link" href="meus-pedidos.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21V3Z"></path>
+            <path d="M10 8h4M10 12h4M10 16h4"></path>
+          </svg><span>Meus pedidos neste navegador</span></a><a aria-current="page" class="navegacao-link"
+          href="rastreio.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 4.5 4.5M10.5 7v7M7 10.5h7"></path>
+          </svg><span>Acompanhar por referência</span></a><span class="movel-menu-titulo">Conta e central local</span><a
+          class="navegacao-link" href="login.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false"
+            viewbox="0 0 24 24">
+            <circle cx="12" cy="8" r="3.2"></circle>
+            <path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path>
+          </svg><span>Entrar</span></a><a class="navegacao-link" href="cadastro.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="9" cy="8" r="3"></circle>
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0M18 8v6M15 11h6"></path>
+          </svg><span>Criar conta</span></a><a class="navegacao-link administracao-entrada-link" href="painel.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+          </svg><span>Painel do admin — demonstração local</span></a>
+      </nav>
+    </div>
+    <div class="cabecalho-navegacao-linha">
+      <nav aria-label="Navegação principal" class="computador-navegacao estrutura">
+        <a class="navegacao-link" href="index.html#inicio"><svg aria-hidden="true" class="navegacao-icone"
+            focusable="false" viewbox="0 0 24 24">
+            <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"></path>
+          </svg><span>Início</span></a><a class="navegacao-link" href="index.html#cardapio"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M8 5h12M8 12h12M8 19h12"></path>
+            <circle cx="4" cy="5" r="1"></circle>
+            <circle cx="4" cy="12" r="1"></circle>
+            <circle cx="4" cy="19" r="1"></circle>
+          </svg><span>Cardápio</span></a><a class="navegacao-link" href="index.html#galeria"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="16" rx="2" width="18" x="3" y="4"></rect>
+            <circle cx="9" cy="10" r="2"></circle>
+            <path d="m4 18 5-5 3 3 3-4 5 6"></path>
+          </svg><span>Galeria</span></a><a class="navegacao-link" href="personalizar.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"></path>
+            <path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"></path>
+          </svg><span>Personalizar</span></a><a class="navegacao-link" href="index.html#recados"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2 1.4-4A7.5 7.5 0 1 1 20 11.5Z"></path>
+            <path d="M8 11h8M8 14h5"></path>
+          </svg><span>Recados</span></a><a class="navegacao-link" href="index.html#depoimentos"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"></path>
+          </svg><span>Avaliações</span></a><a aria-current="page" class="navegacao-link" href="rastreio.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 4.5 4.5M10.5 7v7M7 10.5h7"></path>
+          </svg><span>Rastreio</span></a><a class="navegacao-link" href="meus-pedidos.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21V3Z"></path>
+            <path d="M10 8h4M10 12h4M10 16h4"></path>
+          </svg><span>Meus pedidos</span></a><a class="navegacao-link administracao-entrada-link"
+          href="painel.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+          </svg><span>Painel</span></a>
+      </nav>
+    </div>
+    <div class="cabecalho-servico-linha">
+      <div class="estrutura cabecalho-servico-interno">
+        <span class="cabecalho-servico-nota"><span aria-hidden="true" class="servico-marca">✦</span> Feito
+          artesanalmente, todos os dias</span>
+        <div class="cabecalho-servico-links">
+          <a href="rastreio.html">Acompanhar pedido</a><a href="index.html#depoimentos">Avaliações</a><a
+            href="index.html#contato">Atendimento</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div aria-atomic="true" aria-live="polite" class="site-notificacao" hidden="" id="site-notificacao" role="status">
+  </div>
+  <main aria-labelledby="rastreamento-titulo" class="pagina-principal rastreio-principal" id="principal-conteudo"
+    tabindex="-1">
+    <section aria-labelledby="rastreamento-titulo" class="rastreamento-destaque">
+      <div class="estrutura rastreamento-destaque-interno">
+        <p class="sobretitulo">
+          <span aria-hidden="true" class="rastreamento-marca">✦</span> Acompanhe
+          sua solicitação
+        </p>
+        <h1 id="rastreamento-titulo">Cada etapa, com <em>carinho.</em></h1>
+        <p class="rastreamento-introducao">
+          Consulte o andamento demonstrativo registrado neste navegador,
+          usando a referência exibida no comprovante.
+        </p>
+        <div aria-hidden="true" class="rastreamento-destaque-regra">
+          <span></span> Dinda Doces &amp; Salgados <span></span>
+        </div>
+      </div>
+    </section>
+    <section aria-label="Consulta de referência local" class="estrutura rastreamento-secao">
+      <div class="rastreamento-grade">
+        <div class="rastreamento-buscar-cartao">
+          <div class="rastreamento-cartao-titulo">
+            <span aria-hidden="true" class="rastreamento-icone">↗</span>
+            <div>
+              <p class="sobretitulo">Consulta neste dispositivo</p>
+              <h2>Encontre seu pedido</h2>
+            </div>
+          </div>
+          <p class="rastreamento-cartao-redacao">
+            Digite a referência que aparece no comprovante local para ver o
+            resumo disponível neste navegador.
+          </p>
+          <div class="administracao-aviso rastreamento-aviso" role="note">
+            <span aria-hidden="true">i</span>
+            <div>
+              <strong>Rastreio apenas local.</strong>Digite a referência
+              exibida no comprovante de checkout. Esta ferramenta não consulta
+              pedidos da loja, não busca por telefone e não confirma entrega.
+            </div>
+          </div>
+          <form aria-label="Buscar referência local" class="rastreamento-formulario" id="rastreamento-formulario">
+            <label class="visualmente-oculto" for="rastreamento-referencia">Referência do comprovante</label>
+            <span aria-hidden="true" class="rastreamento-rotulo">REFERÊNCIA DO COMPROVANTE</span>
+            <input autocomplete="off" id="rastreamento-referencia" name="reference" placeholder="Ex.: DINDA-ABC123"
+              required="" />
+            <button class="botao botao-principal" type="submit">
+              <span aria-hidden="true">⌕</span> Consultar referência
+            </button>
+          </form>
+          <p aria-live="polite" class="finalizar-erro rastreamento-comentario" hidden="" id="rastreamento-comentario"
+            role="alert"></p>
+          <p class="rastreamento-dica">
+            <span aria-hidden="true">ⓘ</span> A consulta não pede telefone ou
+            outros dados pessoais.
+          </p>
+        </div>
+        <div class="rastreamento-resultado-coluna">
+          <div aria-live="polite" class="rastreamento-vazio">
+            <span aria-hidden="true" class="rastreamento-rota-icone">◎</span>
+            <p class="sobretitulo">Acompanhamento</p>
+            <h2>Seu resumo aparecerá aqui</h2>
+            <p>
+              Faça uma consulta para visualizar as informações locais
+              disponíveis para a referência.
+            </p>
+            <div aria-hidden="true" class="rastreamento-vazio-linha"></div>
+          </div>
+          <section aria-live="polite" class="rastreamento-resultado" hidden="" id="rastreamento-resultado"></section>
+          <template id="modelo-resultado-rastreio">
+            <article class="rastreamento-resultado">
+              <header class="administracao-pedido-cabeca">
+                <div>
+                  <p class="sobretitulo">Referência local</p>
+                  <h2 data-referencia-rastreio=""></h2><span class="local-pedido-meta" data-data-rastreio=""></span>
+                </div><span class="status-pildora" data-situacao-rastreio=""></span>
+              </header>
+              <div data-linha-tempo-rastreio=""></div>
+              <section aria-label="Itens do pedido"><strong>Itens</strong>
+                <ul class="local-pedido-itens" data-itens-rastreio=""></ul><strong data-subtotal-rastreio=""></strong>
+              </section>
+              <p class="demo-nota">Este andamento é local e demonstrativo. Ele aparece apenas neste navegador e não
+                confirma produção, entrega ou pagamento.</p>
+            </article>
+          </template>
+          <template id="modelo-linha-tempo-rastreio">
+            <ol aria-label="Etapas locais do pedido" class="rastreamento-cronologia" data-etapas-rastreio=""></ol>
+          </template>
+          <template id="modelo-etapa-rastreio">
+            <li data-etapa-rastreio=""></li>
+          </template>
+          <template id="modelo-aviso-cancelamento-rastreio">
+            <aside class="administracao-aviso" role="note"><span aria-hidden="true">!</span>
+              <div><strong>Solicitação cancelada nesta demonstração</strong>Se precisar de confirmação real, entre em
+                contato com a Dinda.</div>
+            </aside>
+          </template>
+          <template id="modelo-item-rastreio">
+            <li><span data-quantidade-item=""></span> × <span data-nome-item=""></span><span
+                data-detalhes-item=""></span></li>
+          </template>
+          <template id="modelo-detalhe-item-rastreio"><small data-detalhe-item=""></small></template>
+        </div>
+      </div>
+      <div aria-label="Informações sobre o acompanhamento" class="rastreamento-beneficios">
+        <article class="rastreamento-beneficio">
+          <span aria-hidden="true">◷</span>
+          <div>
+            <h3>Consulta simples</h3>
+            <p>Veja a referência salva neste navegador.</p>
+          </div>
+        </article>
+        <article class="rastreamento-beneficio">
+          <span aria-hidden="true">✧</span>
+          <div>
+            <h3>Resumo demonstrativo</h3>
+            <p>Os dados exibidos são locais e não confirmam etapas reais.</p>
+          </div>
+        </article>
+        <article class="rastreamento-beneficio">
+          <span aria-hidden="true">↗</span>
+          <div>
+            <h3>Seus pedidos locais</h3>
+            <p>
+              Consulte também a lista deste dispositivo em
+              <a href="meus-pedidos.html">Meus pedidos</a>.
+            </p>
+          </div>
+        </article>
+      </div>
+      <p class="demo-nota rastreamento-demo-nota">
+        Se limpou os dados do navegador ou usa outro dispositivo, a referência
+        não estará disponível aqui. Você pode consultar os pedidos locais em
+        <a class="texto-link" href="meus-pedidos.html">Meus pedidos</a>.
+      </p>
+    </section>
+  </main>
+  <footer class="site-rodape">
+    <section class="estrutura rodape-principal">
+      <div class="rodape-marca">
+        <a aria-label="Dinda Doces e Salgados — início" class="rodape-logo-link" href="index.html#inicio"><img
+            alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" /></a>
+        <p>
+          Cada receita leva um pouquinho de carinho — para transformar
+          encontros em doces lembranças.
+        </p>
+        <span class="assinatura">Dinda · Brasília</span>
+      </div>
+      <div class="rodape-coluna">
+        <h2>A loja</h2>
+        <a href="index.html#cardapio">Cardápio</a><a href="index.html#galeria">Galeria</a><a
+          href="personalizar.html">Monte seu bolo</a><a href="index.html#depoimentos">Avaliações</a><a
+          href="index.html#contato">Contato</a>
+      </div>
+      <div class="rodape-coluna">
+        <h2>Atendimento</h2>
+        <a href="carrinho.html">Minha sacola</a><a href="checkout.html">Finalizar pedido</a><a
+          href="meus-pedidos.html">Meus pedidos</a><a aria-current="page" href="rastreio.html">Acompanhar pedido</a><a
+          href="login.html">Minha conta</a>
+      </div>
+      <div class="rodape-coluna rodape-administracao-coluna">
+        <h2>Central Dinda</h2>
+        <a href="painel.html">Painel administrativo</a><a href="produtos.html">Gerenciar produtos</a><a
+          href="pedidos.html">Gerenciar pedidos</a><a href="avaliacoes.html">Gerenciar avaliações</a><span
+          class="rodape-demo-nota">Demonstração local neste navegador</span>
+      </div>
+      <div class="rodape-coluna rodape-pagamento-coluna">
+        <h2>Formas de pagamento</h2>
+        <div aria-label="Formas de pagamento informadas pela loja" class="pagamento-metodos">
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="m8 3 4 4-4 4-4-4 4-4Zm8 10 4 4-4 4-4-4 4-4ZM3 12l4-4 4 4-4 4-4-4Zm10 0 4-4 4 4-4 4-4-4Z"></path>
+            </svg><span>Pix</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="15" rx="2" width="19" x="2.5" y="4.5"></rect>
+              <path d="M3 9h18M6 15h4"></path>
+            </svg><span>Crédito</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="15" rx="2" width="19" x="2.5" y="4.5"></rect>
+              <path d="M3 9h18M6 15h4M16 15h2"></path>
+            </svg><span>Débito</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="12" rx="2" width="18" x="3" y="6"></rect>
+              <path d="M7 10h10M7 14h5"></path>
+            </svg><span>Dinheiro</span></span>
+        </div>
+        <small class="pagamento-nota">Pagamento combinado no atendimento.</small>
+      </div>
+    </section>
+    <section class="rodape-inferior">
+      <div class="estrutura">
+        <span>© <span data-atual-ano="">2026</span> Dinda Doces &amp;
+          Salgados</span><span>Feito com carinho em Brasília · DF</span>
+      </div>
+    </section>
+  </footer>
+  <button aria-label="Voltar ao topo" class="voltar-para-superior" title="Voltar ao topo" type="button">
+    <svg aria-hidden="true" viewbox="0 0 24 24">
+      <path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path>
+    </svg><span>Topo</span>
+  </button>
+</body>
+
+</html>

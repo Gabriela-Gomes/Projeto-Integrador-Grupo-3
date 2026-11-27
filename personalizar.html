@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html data-tema="marrom" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#0e0e0e" name="theme-color" />
+  <meta content="Personalize seu bolo com a Dinda: escolha tamanho, massa, recheio, cobertura e detalhes."
+    name="description" />
+  <title>Personalize seu bolo — Dinda Doces &amp; Salgados</title>
+  <link href="img/fivecon.png" rel="icon" type="image/png" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/ref-personalizar.css" rel="stylesheet" />
+  <link href="css/responsive-tablet.css" rel="stylesheet" />
+  <script>
+    try {
+      const t = localStorage.getItem("dinda-novo-tema");
+      if (["marrom", "preto", "rosa", "rosa-preto"].includes(t))
+        document.documentElement.dataset.tema = t;
+    } catch (e) { }
+  </script>
+  <script defer="" src="js/store.js"></script>
+  <script defer="" src="js/layout.js"></script>
+  <script defer="" src="js/site.js"></script>
+  <script defer="" src="js/customize.js"></script>
+</head>
+
+<body class="pagina-referencia-personalizar">
+  <a class="pular-link" href="#principal-conteudo">Pular para o conteúdo</a>
+  <div class="aviso-barra">
+    <div class="estrutura aviso-interno">
+      <span>Feito artesanalmente em Brasília — DF</span><a href="index.html#contato">Segunda a sábado · 8h às 18h</a>
+    </div>
+  </div>
+  <header class="site-cabecalho">
+    <div class="estrutura cabecalho-interno">
+      <a aria-label="Dinda Doces e Salgados — início" class="marca" href="index.html#inicio"><img
+          alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" /></a>
+      <div aria-label="Ações da loja" class="cabecalho-acoes">
+        <a class="cabecalho-conta-botao" href="login.html">Entrar</a>
+        <a class="cabecalho-cadastrar-botao" href="cadastro.html">Cadastrar</a>
+        <div class="tema-seletor">
+          <button aria-controls="tema-menu" aria-expanded="false" aria-haspopup="true"
+            aria-label="Escolher tema de cores" class="icone-botao tema-gatilho" id="tema-alternar" type="button">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M12 3a9 9 0 1 0 0 18h1.2a2.3 2.3 0 0 0 1.4-4.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4c0-3.8-4-6.8-9-6.8Z">
+              </path>
+              <circle cx="7.5" cy="10" r="1"></circle>
+              <circle cx="11" cy="6.8" r="1"></circle>
+              <circle cx="15.4" cy="7.8" r="1"></circle>
+            </svg>
+          </button>
+          <div aria-label="Temas disponíveis" class="tema-menu" hidden="" id="tema-menu" role="group">
+            <span class="tema-menu-titulo">Escolha seu tema</span>
+            <button aria-pressed="true" class="tema-opcao" data-tema-escolha="marrom" type="button">
+              <span class="tema-amostra amostra-marrom"></span>Marrom
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="preto" type="button">
+              <span class="tema-amostra amostra-preto"></span>Preto Luxo
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa" type="button">
+              <span class="tema-amostra amostra-rosa"></span>Rosa Soft
+            </button>
+            <button aria-pressed="false" class="tema-opcao" data-tema-escolha="rosa-preto" type="button">
+              <span class="tema-amostra amostra-rosa-chique"></span>Rosa Chic
+            </button>
+          </div>
+        </div>
+        <a aria-label="Sacola, 0 itens" class="sacola-link" href="carrinho.html"><svg aria-hidden="true"
+            viewbox="0 0 24 24">
+            <path d="M5 8h14l-1.2 12H6.2L5 8Z"></path>
+            <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+          </svg><span class="sacola-rotulo">Sacola</span><span aria-label="0 itens na sacola" aria-live="polite"
+            class="sacola-contagem" id="sacola-contagem">0</span></a>
+        <button aria-controls="movel-menu" aria-expanded="false" aria-label="Abrir menu" class="hamburguer"
+          id="menu-alternar" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav aria-label="Menu principal" class="movel-menu" hidden="" id="movel-menu">
+        <span class="movel-menu-titulo">Conheça a Dinda</span><a class="navegacao-link" href="index.html#inicio"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"></path>
+          </svg><span>Início</span></a><a class="navegacao-link" href="index.html#cardapio"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M8 5h12M8 12h12M8 19h12"></path>
+            <circle cx="4" cy="5" r="1"></circle>
+            <circle cx="4" cy="12" r="1"></circle>
+            <circle cx="4" cy="19" r="1"></circle>
+          </svg><span>Cardápio</span></a><a class="navegacao-link" href="index.html#galeria"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="16" rx="2" width="18" x="3" y="4"></rect>
+            <circle cx="9" cy="10" r="2"></circle>
+            <path d="m4 18 5-5 3 3 3-4 5 6"></path>
+          </svg><span>Galeria de fotos</span></a><a class="navegacao-link" href="index.html#recados"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2 1.4-4A7.5 7.5 0 1 1 20 11.5Z"></path>
+            <path d="M8 11h8M8 14h5"></path>
+          </svg><span>Novidades e recados</span></a><a aria-current="page" class="navegacao-link"
+          href="personalizar.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false"
+            viewbox="0 0 24 24">
+            <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"></path>
+            <path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"></path>
+          </svg><span>Personalizar seu bolo</span></a><a class="navegacao-link" href="index.html#depoimentos"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"></path>
+          </svg><span>Avaliações e dúvidas</span></a><a class="navegacao-link" href="index.html#contato"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path
+              d="M6.5 3.5h3l1.7 4.2-2 1.6a15 15 0 0 0 5.5 5.5l1.6-2 4.2 1.7v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z">
+            </path>
+          </svg><span>Contato</span></a><a class="navegacao-link" href="index.html#localizacao"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="2.5"></circle>
+          </svg><span>Mapa de Brasília</span></a><span class="movel-menu-titulo">Seu pedido</span><a
+          class="navegacao-link" href="carrinho.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false"
+            viewbox="0 0 24 24">
+            <path d="M5 8h14l-1.2 12H6.2L5 8Z"></path>
+            <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+          </svg><span>Minha sacola</span></a><a class="navegacao-link" href="checkout.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="14" rx="2" width="18" x="3" y="5"></rect>
+            <path d="M3 10h18M7 15h4"></path>
+          </svg><span>Finalizar pedido</span></a><a class="navegacao-link" href="meus-pedidos.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21V3Z"></path>
+            <path d="M10 8h4M10 12h4M10 16h4"></path>
+          </svg><span>Meus pedidos neste navegador</span></a><a class="navegacao-link" href="rastreio.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 4.5 4.5M10.5 7v7M7 10.5h7"></path>
+          </svg><span>Acompanhar por referência</span></a><span class="movel-menu-titulo">Conta e central local</span><a
+          class="navegacao-link" href="login.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false"
+            viewbox="0 0 24 24">
+            <circle cx="12" cy="8" r="3.2"></circle>
+            <path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path>
+          </svg><span>Entrar</span></a><a class="navegacao-link" href="cadastro.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="9" cy="8" r="3"></circle>
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0M18 8v6M15 11h6"></path>
+          </svg><span>Criar conta</span></a><a class="navegacao-link administracao-entrada-link" href="painel.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+          </svg><span>Painel do admin — demonstração local</span></a>
+      </nav>
+    </div>
+    <div class="cabecalho-navegacao-linha">
+      <nav aria-label="Navegação principal" class="computador-navegacao estrutura">
+        <a class="navegacao-link" href="index.html#inicio"><svg aria-hidden="true" class="navegacao-icone"
+            focusable="false" viewbox="0 0 24 24">
+            <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"></path>
+          </svg><span>Início</span></a><a class="navegacao-link" href="index.html#cardapio"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M8 5h12M8 12h12M8 19h12"></path>
+            <circle cx="4" cy="5" r="1"></circle>
+            <circle cx="4" cy="12" r="1"></circle>
+            <circle cx="4" cy="19" r="1"></circle>
+          </svg><span>Cardápio</span></a><a class="navegacao-link" href="index.html#galeria"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="16" rx="2" width="18" x="3" y="4"></rect>
+            <circle cx="9" cy="10" r="2"></circle>
+            <path d="m4 18 5-5 3 3 3-4 5 6"></path>
+          </svg><span>Galeria</span></a><a aria-current="page" class="navegacao-link" href="personalizar.html"><svg
+            aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"></path>
+            <path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"></path>
+          </svg><span>Personalizar</span></a><a class="navegacao-link" href="index.html#recados"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2 1.4-4A7.5 7.5 0 1 1 20 11.5Z"></path>
+            <path d="M8 11h8M8 14h5"></path>
+          </svg><span>Recados</span></a><a class="navegacao-link" href="index.html#depoimentos"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"></path>
+          </svg><span>Avaliações</span></a><a class="navegacao-link" href="rastreio.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 4.5 4.5M10.5 7v7M7 10.5h7"></path>
+          </svg><span>Rastreio</span></a><a class="navegacao-link" href="meus-pedidos.html"><svg aria-hidden="true"
+            class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21V3Z"></path>
+            <path d="M10 8h4M10 12h4M10 16h4"></path>
+          </svg><span>Meus pedidos</span></a><a class="navegacao-link administracao-entrada-link"
+          href="painel.html"><svg aria-hidden="true" class="navegacao-icone" focusable="false" viewbox="0 0 24 24">
+            <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+            <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+            <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+          </svg><span>Painel</span></a>
+      </nav>
+    </div>
+    <div class="cabecalho-servico-linha">
+      <div class="estrutura cabecalho-servico-interno">
+        <span class="cabecalho-servico-nota"><span aria-hidden="true" class="servico-marca">✦</span> Feito
+          artesanalmente, todos os dias</span>
+        <div class="cabecalho-servico-links">
+          <a href="rastreio.html">Acompanhar pedido</a><a href="index.html#depoimentos">Avaliações</a><a
+            href="index.html#contato">Atendimento</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div aria-atomic="true" aria-live="polite" class="site-notificacao" hidden="" id="site-notificacao" role="status">
+  </div>
+  <main class="pagina-principal" id="principal-conteudo" tabindex="-1">
+    <section class="pagina-destaque estrutura">
+      <div>
+        <p class="sobretitulo">Ateliê Dinda</p>
+        <h1>Seu bolo.<br /><em>Do seu jeitinho.</em></h1>
+        <p>
+          Escolha os sabores e acabamentos para criar um bolo especial. Veja o
+          valor estimado enquanto monta sua combinação.
+        </p>
+        <a class="texto-link" href="index.html#cardapio">Voltar ao cardápio <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="pagina-destaque-imagem">
+        <img alt="Bolo de chocolate artesanal com cobertura cremosa e detalhes de chocolate" height="427"
+          loading="eager" src="img/bolo2.jpg" width="640" /><span class="imagem-nota">Feito para a sua ocasião</span>
+      </div>
+    </section>
+    <section aria-labelledby="construtor-titulo" class="secao estrutura construtor-secao">
+      <div class="construtor-titulo">
+        <p class="sobretitulo">Monte sua criação</p>
+        <h2 id="construtor-titulo">Escolha cada <em>detalhe.</em></h2>
+        <p>
+          As encomendas personalizadas precisam de pelo menos 3 dias de
+          antecedência.
+        </p>
+      </div>
+      <div class="construtor-disposicao">
+        <form class="personalizado-formulario" id="personalizado-formulario">
+          <fieldset class="escolha-grupo">
+            <legend><span>01</span> Tamanho do bolo</legend>
+            <div class="escolha-grade">
+              <label class="escolha-cartao"><input checked="" data-preco="45" name="size" type="radio"
+                  value="1 kg · aprox. 10 fatias" /><span class="escolha-titulo">Mini / padrão</span><span
+                  class="escolha-descricao">1 kg · cerca de 10 fatias</span><strong>R$ 45,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="62" name="size" type="radio"
+                  value="1,5 kg · aprox. 15 fatias" /><span class="escolha-titulo">Médio</span><span
+                  class="escolha-descricao">1,5 kg · cerca de 15 fatias</span><strong>R$ 62,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="82" name="size" type="radio"
+                  value="2 kg · aprox. 20 fatias" /><span class="escolha-titulo">Família</span><span
+                  class="escolha-descricao">2 kg · cerca de 20 fatias</span><strong>R$ 82,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="118" name="size" type="radio"
+                  value="3 kg · aprox. 30 fatias" /><span class="escolha-titulo">Festa</span><span
+                  class="escolha-descricao">3 kg · cerca de 30 fatias</span><strong>R$ 118,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="148" name="size" type="radio"
+                  value="4 kg · aprox. 40 fatias" /><span class="escolha-titulo">Grande festa</span><span
+                  class="escolha-descricao">4 kg · cerca de 40 fatias</span><strong>R$ 148,00</strong></label>
+            </div>
+          </fieldset>
+          <fieldset class="escolha-grupo">
+            <legend><span>02</span> Massa</legend>
+            <div class="escolha-grade">
+              <label class="escolha-cartao"><input checked="" data-preco="0" name="dough" type="radio"
+                  value="Baunilha caseira" /><span class="escolha-titulo">Baunilha</span><span
+                  class="escolha-descricao">Fofinha e delicada</span><strong>Inclusa</strong></label>
+              <label class="escolha-cartao"><input data-preco="5" name="dough" type="radio"
+                  value="Chocolate belga" /><span class="escolha-titulo">Chocolate intenso</span><span
+                  class="escolha-descricao">Cacau marcante</span><strong>+ R$ 5,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="8" name="dough" type="radio" value="Red Velvet" /><span
+                  class="escolha-titulo">Red Velvet</span><span class="escolha-descricao">Massa
+                  aveludada</span><strong>+ R$ 8,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="0" name="dough" type="radio"
+                  value="Cenoura com especiarias" /><span class="escolha-titulo">Cenoura</span><span
+                  class="escolha-descricao">Caseira e macia</span><strong>Inclusa</strong></label>
+              <label class="escolha-cartao"><input data-preco="5" name="dough" type="radio"
+                  value="Limão siciliano" /><span class="escolha-titulo">Limão siciliano</span><span
+                  class="escolha-descricao">Cítrica e leve</span><strong>+ R$ 5,00</strong></label>
+            </div>
+          </fieldset>
+          <fieldset class="escolha-grupo">
+            <legend><span>03</span> Recheio</legend>
+            <div class="escolha-grade">
+              <label class="escolha-cartao"><input checked="" data-preco="0" name="filling" type="radio"
+                  value="Sem recheio" /><span class="escolha-titulo">Sem recheio</span><span
+                  class="escolha-descricao">Só cobertura</span><strong>Incluso</strong></label>
+              <label class="escolha-cartao"><input data-preco="12" name="filling" type="radio"
+                  value="Brigadeiro tradicional" /><span class="escolha-titulo">Brigadeiro</span><span
+                  class="escolha-descricao">Chocolate cremoso</span><strong>+ R$ 12,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="12" name="filling" type="radio"
+                  value="Doce de leite" /><span class="escolha-titulo">Doce de leite</span><span
+                  class="escolha-descricao">Artesanal e cremoso</span><strong>+ R$ 12,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="15" name="filling" type="radio"
+                  value="Leite Ninho" /><span class="escolha-titulo">Leite Ninho</span><span
+                  class="escolha-descricao">Suave e delicado</span><strong>+ R$ 15,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="20" name="filling" type="radio"
+                  value="Ninho com creme de avelã" /><span class="escolha-titulo">Ninho com creme de avelã</span><span
+                  class="escolha-descricao">Uma combinação especial</span><strong>+ R$ 20,00</strong></label>
+            </div>
+          </fieldset>
+          <fieldset class="escolha-grupo">
+            <legend><span>04</span> Cobertura</legend>
+            <div class="escolha-grade">
+              <label class="escolha-cartao"><input checked="" data-preco="0" name="topping" type="radio"
+                  value="Ganache de chocolate" /><span class="escolha-titulo">Ganache de chocolate</span><span
+                  class="escolha-descricao">Brilho e sabor intenso</span><strong>Inclusa</strong></label>
+              <label class="escolha-cartao"><input data-preco="5" name="topping" type="radio"
+                  value="Goiabada cremosa" /><span class="escolha-titulo">Goiabada cremosa</span><span
+                  class="escolha-descricao">Um toque de Romeu e Julieta</span><strong>+ R$ 5,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="8" name="topping" type="radio"
+                  value="Creme de Ninho" /><span class="escolha-titulo">Creme de Ninho</span><span
+                  class="escolha-descricao">Branco e cremoso</span><strong>+ R$ 8,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="12" name="topping" type="radio"
+                  value="Buttercream rosa" /><span class="escolha-titulo">Buttercream rosa</span><span
+                  class="escolha-descricao">Acabamento elegante</span><strong>+ R$ 12,00</strong></label>
+              <label class="escolha-cartao"><input data-preco="10" name="topping" type="radio"
+                  value="Calda de frutas vermelhas" /><span class="escolha-titulo">Frutas vermelhas</span><span
+                  class="escolha-descricao">Levemente azedinha</span><strong>+ R$ 10,00</strong></label>
+            </div>
+          </fieldset>
+          <fieldset class="escolha-grupo">
+            <legend>
+              <span>05</span> Extras e decoração
+              <small>Escolha quantos quiser</small>
+            </legend>
+            <div class="escolha-grade extras-grade">
+              <label class="escolha-cartao extra-cartao"><input data-preco="6" name="extra" type="checkbox"
+                  value="Morangos frescos" /><span class="escolha-titulo">Morangos frescos</span><strong>+ R$
+                  6,00</strong></label>
+              <label class="escolha-cartao extra-cartao"><input data-preco="5" name="extra" type="checkbox"
+                  value="Nozes picadas" /><span class="escolha-titulo">Nozes picadas</span><strong>+ R$
+                  5,00</strong></label>
+              <label class="escolha-cartao extra-cartao"><input data-preco="8" name="extra" type="checkbox"
+                  value="Gotas de chocolate" /><span class="escolha-titulo">Gotas de chocolate</span><strong>+ R$
+                  8,00</strong></label>
+              <label class="escolha-cartao extra-cartao"><input data-preco="6" name="extra" type="checkbox"
+                  value="Granulado belga" /><span class="escolha-titulo">Granulado belga</span><strong>+ R$
+                  6,00</strong></label>
+              <label class="escolha-cartao extra-cartao"><input data-preco="8" name="extra" type="checkbox"
+                  value="Mini brigadeiros" /><span class="escolha-titulo">Mini brigadeiros</span><strong>+ R$
+                  8,00</strong></label>
+              <label class="escolha-cartao extra-cartao"><input data-preco="12" name="extra" type="checkbox"
+                  value="Topo personalizado" /><span class="escolha-titulo">Topo personalizado</span><strong>+ R$
+                  12,00</strong></label>
+            </div>
+          </fieldset>
+          <div class="formulario-campos">
+            <label for="entrega-data">Data desejada para entrega ou retirada
+              <span class="obrigatorio-marca">*</span></label>
+            <input aria-describedby="data-ajuda" id="entrega-data" name="delivery-date" required="" type="date" />
+            <small id="data-ajuda">Selecione uma data com no mínimo 3 dias de antecedência.</small>
+            <label for="personalizado-notas">Observações
+              <span class="opcional-rotulo">(opcional)</span></label>
+            <textarea id="personalizado-notas" name="notes" placeholder="Conte à Dinda algum detalhe importante…"
+              rows="3" aria-describedby="personalizado-notas-privacidade"></textarea>
+            <small class="campo-ajuda" id="personalizado-notas-privacidade">As observações não ficam salvas na sacola
+              nem são enviadas à loja nesta demonstração.</small>
+          </div>
+          <p class="formulario-erro" hidden="" id="personalizado-erro" role="alert"></p>
+          <button class="botao botao-principal botao-largo" type="submit">
+            Adicionar à sacola <span aria-hidden="true">→</span>
+          </button>
+          <p class="formulario-sucesso" hidden="" id="personalizado-sucesso" role="status">
+            Seu bolo foi adicionado à sacola.
+            <a href="carrinho.html">Ver sacola</a>
+          </p>
+        </form>
+        <aside aria-label="Resumo do bolo personalizado" class="construtor-resumo">
+          <figure class="resumo-imagem bolo-previsualizacao" id="bolo-previsualizacao">
+            <figcaption class="bolo-previsualizacao-selo">
+              <strong id="bolo-tamanho-selo">1 kg</strong>
+            </figcaption>
+            <svg aria-describedby="bolo-previsualizacao-descricao" aria-labelledby="bolo-previsualizacao-titulo"
+              class="bolo-ilustracao" data-preenchido="false" focusable="false" id="personalizado-bolo-ilustracao"
+              role="img" viewbox="0 0 440 260">
+              <title id="bolo-previsualizacao-titulo">
+                Bolo montado de acordo com suas escolhas
+              </title>
+              <defs>
+                <lineargradient id="bolo-corpo-gradiente" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0" stop-color="#000" stop-opacity=".13"></stop>
+                  <stop offset=".48" stop-color="#fff" stop-opacity=".08"></stop>
+                  <stop offset="1" stop-color="#000" stop-opacity=".12"></stop>
+                </lineargradient>
+              </defs>
+              <ellipse cx="220" cy="229" fill="rgba(47,26,13,.12)" rx="160" ry="17"></ellipse>
+              <ellipse cx="220" cy="220" fill="var(--surface)" rx="157" ry="18" stroke="var(--line)" stroke-width="3">
+              </ellipse>
+              <ellipse cx="220" cy="217" fill="var(--surface-soft)" opacity=".95" rx="132" ry="10"></ellipse>
+              <g id="bolo-corpo-grupo" transform="translate(220 180) scale(.84) translate(-220 -180)">
+                <path
+                  d="M86 109 C86 94 146 82 220 82 C294 82 354 94 354 109 L354 184 C354 201 294 214 220 214 C146 214 86 201 86 184 Z"
+                  fill="#ead3ad" id="bolo-corpo"></path>
+                <path d="M86 110 C133 130 301 130 354 110 L354 185 C307 207 131 207 86 185 Z"
+                  fill="url(#cakeBodyGradient)"></path>
+                <path d="M86 151 C131 168 307 168 354 151 L354 164 C307 182 131 182 86 164 Z" fill="#59382d"
+                  id="bolo-recheio-faixa"></path>
+                <path
+                  d="M86 106 C111 94 145 89 179 88 C218 87 257 89 292 92 C322 94 342 99 354 106 L354 121 C344 121 338 138 326 136 C314 134 318 121 306 121 C294 121 294 139 282 139 C269 139 274 122 261 122 C249 122 251 136 239 136 C227 136 230 121 217 121 C204 121 206 140 193 140 C181 140 184 123 171 123 C158 123 160 139 147 139 C135 139 138 123 125 123 C113 123 113 137 101 134 C94 132 90 125 86 123 Z"
+                  fill="#59382d" id="bolo-cobertura"></path>
+                <ellipse cx="220" cy="109" fill="#59382d" id="bolo-superior" rx="134" ry="28"></ellipse>
+                <ellipse cx="220" cy="103" fill="var(--cake-topping-highlight, #fff)" opacity=".22" rx="108" ry="14">
+                </ellipse>
+                <g class="bolo-extra" id="bolo-extra-morangos">
+                  <path
+                    d="M177 91 C174 81 185 75 194 83 C202 74 215 81 211 92 C208 102 195 109 195 109 C195 109 180 102 177 91Z"
+                    fill="#c84d57"></path>
+                  <path d="M184 81 L181 74 L190 78 L194 72 L198 79 L207 76 L203 84" fill="#547d4c"></path>
+                  <path
+                    d="M226 87 C223 77 234 71 243 79 C251 70 264 77 260 88 C257 98 244 105 244 105 C244 105 229 98 226 87Z"
+                    fill="#c84d57"></path>
+                  <path d="M233 77 L230 70 L239 74 L243 68 L247 75 L256 72 L252 80" fill="#547d4c"></path>
+                </g>
+                <g class="bolo-extra" fill="#b7824d" id="bolo-extra-castanhas" stroke="#8f6038" stroke-width="2">
+                  <ellipse cx="144" cy="106" rx="7" ry="4" transform="rotate(-24 144 106)"></ellipse>
+                  <ellipse cx="168" cy="98" rx="6" ry="4" transform="rotate(18 168 98)"></ellipse>
+                  <ellipse cx="278" cy="98" rx="7" ry="4" transform="rotate(-18 278 98)"></ellipse>
+                  <ellipse cx="300" cy="108" rx="6" ry="4" transform="rotate(23 300 108)"></ellipse>
+                </g>
+                <g class="bolo-extra" fill="#38251f" id="bolo-extra-gotas">
+                  <circle cx="150" cy="105" r="4"></circle>
+                  <circle cx="184" cy="98" r="3.5"></circle>
+                  <circle cx="260" cy="100" r="4"></circle>
+                  <circle cx="289" cy="108" r="3.5"></circle>
+                  <circle cx="224" cy="98" r="3"></circle>
+                </g>
+                <g class="bolo-extra" id="bolo-extra-confeitos" stroke-linecap="round" stroke-width="3">
+                  <path d="M145 96l7-4" stroke="#d75b5b"></path>
+                  <path d="M164 108l7 3" stroke="#e9bd4d"></path>
+                  <path d="M190 96l7-3" stroke="#668c66"></path>
+                  <path d="M215 107l7 3" stroke="#d75b5b"></path>
+                  <path d="M244 95l7-4" stroke="#e9bd4d"></path>
+                  <path d="M271 108l7 3" stroke="#668c66"></path>
+                  <path d="M298 96l7-4" stroke="#d75b5b"></path>
+                </g>
+                <g class="bolo-extra" id="bolo-extra-brigadeiros">
+                  <circle cx="174" cy="83" fill="#513026" r="12"></circle>
+                  <circle cx="220" cy="77" fill="#513026" r="13"></circle>
+                  <circle cx="266" cy="83" fill="#513026" r="12"></circle>
+                  <g fill="#8b604c">
+                    <circle cx="170" cy="80" r="2"></circle>
+                    <circle cx="177" cy="86" r="2"></circle>
+                    <circle cx="216" cy="74" r="2"></circle>
+                    <circle cx="224" cy="80" r="2"></circle>
+                    <circle cx="263" cy="80" r="2"></circle>
+                    <circle cx="269" cy="87" r="2"></circle>
+                  </g>
+                </g>
+                <g class="bolo-extra" id="bolo-extra-decoracao">
+                  <path d="M220 87V48" stroke="#8f6547" stroke-width="3"></path>
+                  <path
+                    d="M220 49 C207 34 188 44 195 57 C201 68 220 73 220 73 C220 73 239 68 245 57 C252 44 233 34 220 49Z"
+                    fill="var(--accent)"></path>
+                  <path d="M204 55l5 4m22-5-5 5" stroke="#fff" stroke-linecap="round" stroke-width="2"></path>
+                </g>
+              </g>
+            </svg>
+            <p aria-atomic="true" aria-live="polite" class="visualmente-oculto" id="bolo-previsualizacao-descricao">
+              Prévia ilustrativa ao vivo: bolo de 1 kg, massa Baunilha
+              caseira, recheio Sem recheio, cobertura Ganache de chocolate,
+              sem itens adicionais.
+            </p>
+          </figure>
+          <div class="resumo-corpo">
+            <p class="sobretitulo">Sua criação</p>
+            <h2>Resumo do bolo</h2>
+            <dl class="personalizado-resumo-lista">
+              <div>
+                <dt>Tamanho</dt>
+                <dd id="resumo-tamanho">1 kg · aprox. 10 fatias</dd>
+              </div>
+              <div>
+                <dt>Massa</dt>
+                <dd id="resumo-massa">Baunilha caseira</dd>
+              </div>
+              <div>
+                <dt>Recheio</dt>
+                <dd id="resumo-recheio">Sem recheio</dd>
+              </div>
+              <div>
+                <dt>Cobertura</dt>
+                <dd id="resumo-cobertura">Ganache de chocolate</dd>
+              </div>
+              <div>
+                <dt>Extras</dt>
+                <dd id="resumo-extras">Nenhum</dd>
+              </div>
+            </dl>
+            <div class="resumo-total">
+              <span>Valor estimado</span><output aria-live="polite" id="personalizado-total">R$ 45,00</output>
+            </div>
+            <p class="demo-nota">
+              Estimativa baseada nas opções escolhidas. A confirmação do
+              pedido e do valor final deve ser feita diretamente com a loja.
+              Esta demonstração funciona somente neste navegador e não possui
+              autenticação nem integração com um backend.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-rodape">
+    <section class="estrutura rodape-principal">
+      <div class="rodape-marca">
+        <a aria-label="Dinda Doces e Salgados — início" class="rodape-logo-link" href="index.html#inicio"><img
+            alt="Dinda Doces &amp; Salgados" height="60" src="img/logo-dinda.png" width="180" /></a>
+        <p>
+          Cada receita leva um pouquinho de carinho — para transformar
+          encontros em doces lembranças.
+        </p>
+        <span class="assinatura">Dinda · Brasília</span>
+      </div>
+      <div class="rodape-coluna">
+        <h2>A loja</h2>
+        <a href="index.html#cardapio">Cardápio</a><a href="index.html#galeria">Galeria</a><a aria-current="page"
+          href="personalizar.html">Monte seu bolo</a><a href="index.html#depoimentos">Avaliações</a><a
+          href="index.html#contato">Contato</a>
+      </div>
+      <div class="rodape-coluna">
+        <h2>Atendimento</h2>
+        <a href="carrinho.html">Minha sacola</a><a href="checkout.html">Finalizar pedido</a><a
+          href="meus-pedidos.html">Meus pedidos</a><a href="rastreio.html">Acompanhar pedido</a><a
+          href="login.html">Minha conta</a>
+      </div>
+      <div class="rodape-coluna rodape-administracao-coluna">
+        <h2>Central Dinda</h2>
+        <a href="painel.html">Painel administrativo</a><a href="produtos.html">Gerenciar produtos</a><a
+          href="pedidos.html">Gerenciar pedidos</a><a href="avaliacoes.html">Gerenciar avaliações</a><span
+          class="rodape-demo-nota">Demonstração local neste navegador</span>
+      </div>
+      <div class="rodape-coluna rodape-pagamento-coluna">
+        <h2>Formas de pagamento</h2>
+        <div aria-label="Formas de pagamento informadas pela loja" class="pagamento-metodos">
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <path d="m8 3 4 4-4 4-4-4 4-4Zm8 10 4 4-4 4-4-4 4-4ZM3 12l4-4 4 4-4 4-4-4Zm10 0 4-4 4 4-4 4-4-4Z"></path>
+            </svg><span>Pix</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="15" rx="2" width="19" x="2.5" y="4.5"></rect>
+              <path d="M3 9h18M6 15h4"></path>
+            </svg><span>Crédito</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="15" rx="2" width="19" x="2.5" y="4.5"></rect>
+              <path d="M3 9h18M6 15h4M16 15h2"></path>
+            </svg><span>Débito</span></span>
+          <span class="pagamento-metodo"><svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="12" rx="2" width="18" x="3" y="6"></rect>
+              <path d="M7 10h10M7 14h5"></path>
+            </svg><span>Dinheiro</span></span>
+        </div>
+        <small class="pagamento-nota">Pagamento combinado no atendimento.</small>
+      </div>
+    </section>
+    <section class="rodape-inferior">
+      <div class="estrutura">
+        <span>© <span data-atual-ano="">2026</span> Dinda Doces &amp;
+          Salgados</span><span>Feito com carinho em Brasília · DF</span>
+      </div>
+    </section>
+  </footer>
+  <button aria-label="Voltar ao topo" class="voltar-para-superior" title="Voltar ao topo" type="button">
+    <svg aria-hidden="true" viewbox="0 0 24 24">
+      <path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path>
+    </svg><span>Topo</span>
+  </button>
+</body>
+
+</html>
